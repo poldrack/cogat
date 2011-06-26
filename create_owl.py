@@ -176,6 +176,7 @@ for a in owl_dict.iterkeys():
     for l in attrs_to_loop:
         f.write('\t<%s>%s</%s>\n'%(l,d[l],l))
     superClassSet=0
+    measured_by_relations=[]
     if len(d['relations'])>0:
         for r in d['relations']:
             if r[0]=='T1' and owl_dict.has_key(r[1]):
@@ -184,10 +185,20 @@ for a in owl_dict.iterkeys():
             elif r[0]=='T2' and owl_dict.has_key(r[1]):
                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
             elif r[0]=='T16' and owl_task_dict.has_key(r[1]):
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
+                measured_by_relations.append(r[1])
+                
 
     if not superClassSet:
         f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
+#    if 0:
+    if len(measured_by_relations)>1:
+        for m in set(measured_by_relations):
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%m)
+        f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t\t<owl:allValuesFrom>\n\t\t\t\t\t<owl:Class>\n\t\t\t\t\t\t<owl:unionOf rdf:parseType="Collection">\n')
+        print measured_by_relations
+        for m in set(measured_by_relations):
+            f.write('\t\t\t\t\t\t<rdf:Description rdf:about="&cogat;%s"/>\n'%m)
+        f.write('\t\t\t\t\t\t</owl:unionOf>\n\t\t\t\t\t</owl:Class>\n\t\t\t\t</owl:allValuesFrom>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n\n')
 
     f.write('</owl:Class>\n\n\n')
                

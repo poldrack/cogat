@@ -106,12 +106,6 @@
 	<skos:definition>the process by which humans acquire the capacity to perceive, produce and use words to understand and communicate, this capacity involves the picking up of diverse capacities including syntax, phonetics, and an extensive vocabulary, the language might be vocal as with speech or manual as in sign.</skos:definition>
 	<skos:prefLabel>language learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b2b"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -124,12 +118,6 @@
 	<skos:definition>analytical, usually deductive, thinking in which ideas are examined for their logical validity or in which a set of rules is followed.</skos:definition>
 	<skos:prefLabel>convergent thinking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -178,12 +166,6 @@
 	<skos:definition>learning or storing (encoding) that requires attention and effort.</skos:definition>
 	<skos:prefLabel>effortful processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -208,12 +190,7 @@
 	<skos:definition>The ability to understand communication from others, such as speech, written text, gestures, or sign language.</skos:definition>
 	<skos:prefLabel>language comprehension</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -226,7 +203,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949aa1"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499a8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949aa1"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -238,19 +228,26 @@
 	<skos:definition>is reasoning which constructs or evaluates deductive arguments. Deductive arguments are attempts to show that a conclusion necessarily follows from a set of premises or hypotheses. </skos:definition>
 	<skos:prefLabel>deductive reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -274,34 +271,23 @@
 	<skos:definition>4 different processes of accessing stored memories: recall, recollection, recognition, relearning.</skos:definition>
 	<skos:prefLabel>memory retrieval</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499ff"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b38"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -313,16 +299,19 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b38"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499ff"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b38"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949900"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b38"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -334,19 +323,26 @@
 	<skos:definition>a science that deals with the principles and criteria of validity of inference and demonstration; the science of the formal principles of reasoning.</skos:definition>
 	<skos:prefLabel>logic</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -370,12 +366,6 @@
 	<skos:definition>learning based on reward; a form of learning that takes place as a direct consequence of a reward or pleasant outcome for the learner.</skos:definition>
 	<skos:prefLabel>instrumental learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d4e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -424,22 +414,17 @@
 	<skos:definition>The process of changing ones behavioral objective.</skos:definition>
 	<skos:prefLabel>set shifting</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949f21"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949f21"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b75ea4ddd896"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -451,22 +436,32 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949f21"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949ad7"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b75ea4ddd896"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a5d"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949f21"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dad"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949ad7"/>
+						<rdf:Description rdf:about="&cogat;trm_4b75ea4ddd896"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -490,28 +485,11 @@
 	<skos:definition>is the ability of the brain to conceive, organize, and carry out a sequence of unfamiliar actions. </skos:definition>
 	<skos:prefLabel>motor planning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898ff0bea97"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899005b11d5"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dbb"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -523,10 +501,38 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dbb"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899005b11d5"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898ff0bea97"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dbb"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89926767870"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898f079d05e"/>
+						<rdf:Description rdf:about="&cogat;trm_4c899005b11d5"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898ff0bea97"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -550,22 +556,11 @@
 	<skos:definition>A top-down system that manages and controls other cognitive processes, allowing goal-directed behavior.</skos:definition>
 	<skos:prefLabel>executive function</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a0d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ab"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ab"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -580,7 +575,28 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a4f"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ab"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a0d"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898bbab4fd4"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a4f"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498ab"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -736,12 +752,6 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0b5a7"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499e3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -766,10 +776,11 @@
 	<skos:definition>takes place whenever a reader or listener processes a language utterance, either in isolation or in the context of a conversation or a text.</skos:definition>
 	<skos:prefLabel>sentence comprehension</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d84"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -787,10 +798,18 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d84"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d84"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499a8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d69"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -838,12 +857,6 @@
 	<skos:definition>a memory that refers to an event that did not actually occur</skos:definition>
 	<skos:prefLabel>false memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499c7"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -905,12 +918,6 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0b802"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949aa1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 </owl:Class>
 
 
@@ -934,31 +941,26 @@
 	<skos:definition>a form of learning in which either (1) a given stimulus (or signal) becomes increasingly effective in evoking a response or (2) a response occurs with increasing regularity in a well-specified and stable environment. The type of reinforcement used will determine the outcome. When two stimuli are presented in an appropriate time and intensity relationship, one of them will eventually induce a response resembling that of the other. The process can be described as one of stimulus substitution. This procedure is called classical (or respondent) conditioning; based on the work of the Russian physiologist Ivan P. Pavlov.</skos:definition>
 	<skos:prefLabel>pavlovian conditioning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898acd1f28e"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -982,6 +984,13 @@
 	<skos:definition>The process of transforming basic visual sensory input (such as contrast, edge, motion, color etc) into a more abstract and semantically identifiable whole.</skos:definition>
 	<skos:prefLabel>object perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949be9"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -991,16 +1000,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949be9"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949be9"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949aae"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949be9"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -1060,12 +1070,6 @@
 	<skos:definition>has two different processing stages.  The first stage yields a state of of perceptual information about the stimulus presented.  The second stage is the processing of attained perceptual information in a response. </skos:definition>
 	<skos:prefLabel>perceptual identification</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d325977f0"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1090,12 +1094,6 @@
 	<skos:definition>is the cognitive ability to couple characteristics between items that one is perceiving.  This can be illustrated by the one observing a blue square and a yellow circle.  Through the neural mechanisms of perceptual binding, one can ensure that the sensing of blue is coupled to that of a square shape and that of yellow is coupled to that of a circle. </skos:definition>
 	<skos:prefLabel>perceptual binding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b00"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1120,12 +1118,6 @@
 	<skos:definition>to fix the eyes in a steady intent look often with eagerness or studious attention.</skos:definition>
 	<skos:prefLabel>gaze</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f72228f3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1186,12 +1178,6 @@
 	<skos:definition>In memory :A process during which items/event are stored into memory</skos:definition>
 	<skos:prefLabel>encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1222,25 +1208,33 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0b1e0"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d168898db"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c40d168898db"/>
+						<rdf:Description rdf:about="&cogat;trm_4b749b8829eee"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -1264,12 +1258,6 @@
 	<skos:definition>the part of memory  responsible for recording information about one&#39;s environment and its spatial orientation.</skos:definition>
 	<skos:prefLabel>spatial memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1306,6 +1294,7 @@
 	<skos:definition>drawing of inferences or conclusions through the use of reason.</skos:definition>
 	<skos:prefLabel>reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -1315,7 +1304,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1327,10 +1316,18 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						<rdf:Description rdf:about="&cogat;trm_4b9568b2865c2"/>
+						<rdf:Description rdf:about="&cogat;trm_4d8a48e403c78"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -1390,30 +1387,7 @@
 	<skos:definition>a speaker&#39;s implicit, internalized knowledge of the rules of their language.</skos:definition>
 	<skos:prefLabel>linguistic competence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -1426,7 +1400,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e7c"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499a8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e7c"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -1462,6 +1449,7 @@
 	<skos:definition>is the cognitive process of selectively concentrating on one auditory aspect in the environment while ignoring other things. </skos:definition>
 	<skos:prefLabel>auditory attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -1477,10 +1465,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bf6"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898bbab4fd4"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949bf6"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -1492,16 +1487,17 @@
 	<skos:definition>The willingness of an individual to choose an option with a less-than-certain probability of reward over an option with a certain reward of equal or higher expected value. </skos:definition>
 	<skos:prefLabel>risk seeking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d559bcd67c18"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4d54b2cc0f943"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d54b2cc0f943"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4cacee4a1d875"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1513,7 +1509,25 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d5b"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499d5"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4d559bcd67c18"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4d54b61a14a14"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1531,22 +1545,24 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4cacee4a1d875"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4d54b2cc0f943"/>
+						<rdf:Description rdf:about="&cogat;trm_4cacee4a1d875"/>
+						<rdf:Description rdf:about="&cogat;trm_4d55a2bbcfdff"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d5b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499d5"/>
+						<rdf:Description rdf:about="&cogat;trm_4d559bcd67c18"/>
+						<rdf:Description rdf:about="&cogat;trm_4d54b61a14a14"/>
+						<rdf:Description rdf:about="&cogat;trm_4d559d2703bae"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949ae5"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d54b61a14a14"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d5b"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -1570,12 +1586,6 @@
 	<skos:definition>a natural or inherent aptitude, impulse, or capacity; a largely inheritable and unalterable tendency of an organism to make a complex and specific response to environmental stimuli without involving reason, behavior that is mediated by reactions below the conscious level.</skos:definition>
 	<skos:prefLabel>instinct</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1624,12 +1634,6 @@
 	<skos:definition>an act to propagate beliefs that are not true, or not the whole truth (as in half-truths or omission).</skos:definition>
 	<skos:prefLabel>deception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b4b463aa"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1642,12 +1646,6 @@
 	<skos:definition>effectively means one cognitive process has to be completed before the next starts during the processing of information.</skos:definition>
 	<skos:prefLabel>serial processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -1724,7 +1722,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c3e0a9576c3b"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1736,7 +1734,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c3e0a9576c3b"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1748,9 +1746,19 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d69"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8990b07a037"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d1d16071e"/>
+						<rdf:Description rdf:about="&cogat;trm_4c3e0a9576c3b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d69"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -1810,6 +1818,7 @@
 	<skos:definition>The process by which an individual can perform multiple non-automatic tasks at the same time.</skos:definition>
 	<skos:prefLabel>divided attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -1825,7 +1834,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86dbcd8ff78"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -1837,22 +1846,19 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d69"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c3e0a9576c3b"/>
+						<rdf:Description rdf:about="&cogat;trm_4b86dbcd8ff78"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d76"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d69"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -1888,12 +1894,6 @@
 	<skos:definition>a method of processing information that compares the similarities between new and understood concepts, then uses those similarities to gain understanding of the new concept; a form of inductive reasoning.</skos:definition>
 	<skos:prefLabel>analogical reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d4e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2002,12 +2002,6 @@
 	<skos:definition>reasoning from a specific case or cases and deriving a general rule, drawing inferences from observations in order to make generalizations. </skos:definition>
 	<skos:prefLabel>inductive reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d8a48e403c78"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2140,12 +2134,6 @@
 	<skos:definition>a method for searching associative networks, neural networks, or semantic networks; the search process is initiated by labeling a set of source nodes (e.g. concepts in a semantic network) with weights or &#34;activation&#34; and then iteratively propagating or &#34;spreading&#34; that activation out to other nodes linked to the source nodes.</skos:definition>
 	<skos:prefLabel>spreading activation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d92"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2170,24 +2158,7 @@
 	<skos:definition>The process by which information that is currently relevant in the mind is replaced by other information. This information is typically sensory in nature but may also be semantic.</skos:definition>
 	<skos:prefLabel>attention shifting</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949ad7"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -2203,10 +2174,31 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86dbcd8ff78"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949ad7"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d17"/>
+						<rdf:Description rdf:about="&cogat;trm_4b86dbcd8ff78"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949ad7"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a5d"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -2296,31 +2288,26 @@
 	<skos:definition>the mental process of judging the merits of multiple options and selecting one of them.</skos:definition>
 	<skos:prefLabel>choice</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949934"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -2368,12 +2355,6 @@
 	<skos:definition>is vision in which both eyes are used together.  Having two eyes confers at least four advantages over having one. First, it gives a creature a spare eye in case one is damaged. Second, it gives a wider field of view.  Third, it gives binocular summation in which the ability to detect faint objects is enhanced.  Fourth it can give stereopsis in which parallax provided by the two eyes&#39; different positions on the head give precise depth perception.  Such binocular vision is usually accompanied by singleness of vision or binocular fusion, in which a single image is seen despite each eye&#39;s having its own image of any object.  Other phenomena of binocular vision include utrocular discrimination, eye dominance, allelotropia, and binocular rivalry.</skos:definition>
 	<skos:prefLabel>binocular vision</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949aa1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2414,12 +2395,6 @@
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0b5a7"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d4054f38b"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -2590,42 +2565,7 @@
 	<skos:definition>the sensory discrimination of a pattern, shape or outline.</skos:definition>
 	<skos:prefLabel>form perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -2638,7 +2578,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89913f80802"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498ce"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89913f80802"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -2686,12 +2639,7 @@
 	<skos:definition>The process of recoding information by splitting or reorganizing it into smaller parts. </skos:definition>
 	<skos:prefLabel>chunking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -2704,7 +2652,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898fc6722f4"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949900"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898fc6722f4"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -2731,111 +2692,15 @@
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0a891"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bcd"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bcd"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bcd"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bcd"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0a252"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499f1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499f1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949f21"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4aae62e4ad209"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499e3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499f1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a0d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a0d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a85"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898fc6722f4"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898fc6722f4"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -2847,7 +2712,49 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499e3"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d4054f38b"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898fc6722f4"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949f21"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499f1"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bcd"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a85"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -2856,6 +2763,36 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d10cd776e"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a0d"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949abc"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499e3"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d4054f38b"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898fc6722f4"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949f21"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499f1"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949bcd"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a85"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d10cd776e"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -2867,12 +2804,6 @@
 	<skos:definition>the act or process of interfering, obstruction; the mutual effect on meeting of two wave trains (as of light or sound) that constitutes alternating areas of increased and decreased amplitude (as light and dark lines or louder and softer sound); partial or complete inhibition or sometimes facilitation of other genetic crossovers in the vicinity of a chromosomal locus where a preceding crossover has occurred; confusion of a received radio signal due to the presence of noise or signals from two or more transmitters on a single frequency; the disturbing effect of new learning on the performance of previously learned behavior with which it is inconsistent.</skos:definition>
 	<skos:prefLabel>interference</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b843655d5d75"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2885,12 +2816,6 @@
 	<skos:definition>possibility of loss or injury; someone or something that creates or suggests a hazard; the chance that an investment will lose value.</skos:definition>
 	<skos:prefLabel>risk</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499d5"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -2915,6 +2840,7 @@
 	<skos:definition>the components of the central and peripheral nervous systems that receive and interpret sensory information from organs in the joints, ligaments, muscles, and skin. This system processes information about the length, degree of stretch, tension, and contraction of muscles; pain; temperature; pressure; and joint position.</skos:definition>
 	<skos:prefLabel>somatosensation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -2930,22 +2856,24 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89910b7f8bc"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991c5beb0a"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991c5beb0a"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8990f59266f"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89910b7f8bc"/>
+						<rdf:Description rdf:about="&cogat;trm_4c8991c5beb0a"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -3077,6 +3005,13 @@
 	<skos:definition>Movement marked by the regulated succession of strong and weak elements, or of opposite or different conditions.  While rhythm most commonly applies to sound, such as music and spoken language, it may also refer to visual presentation, as timed movement through space.</skos:definition>
 	<skos:prefLabel>rhythm</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3086,10 +3021,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8990b07a037"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898f079d05e"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -3197,19 +3139,26 @@
 	<skos:definition>results when the conscious mind changes focus to sudden changes in the environment (big sound, intensity of light, unique situation etc.).  The person is not prepared for the attention and the attention is not under control of the individual.  The persons attention is less concerned with motives, interests, and needs and the stimulus is usually more important than any functional factors.</skos:definition>
 	<skos:prefLabel>involuntary attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d17"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3245,12 +3194,6 @@
 	<skos:definition>The process of keeping information in active and immediately accessible state.</skos:definition>
 	<skos:prefLabel>maintenance</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e0c"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -3287,6 +3230,7 @@
 	<skos:definition>The process of switching from one task or goal to another, depending on the context or instructions.</skos:definition>
 	<skos:prefLabel>task switching</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3302,10 +3246,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dad"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949f21"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dad"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -3396,6 +3347,21 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949cfb"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498ce"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949aae"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949cfb"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3407,6 +3373,13 @@
 	<skos:definition>losing the remembrance of, unable to think of or recall; treating with inattention or disregard.</skos:definition>
 	<skos:prefLabel>forgetting</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b29660b0"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3416,10 +3389,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b29660b0"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b29660b0"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499c7"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -3431,12 +3411,6 @@
 	<skos:definition>The process of identifying a target within a set of candidate elements by testing the identity of each element against the identity of the sought after target one at a time.</skos:definition>
 	<skos:prefLabel>serial search</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e0c"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -3461,6 +3435,7 @@
 	<skos:definition>A top-down system that manages and controls other cognitive processes, allowing goal-directed behavior.</skos:definition>
 	<skos:prefLabel>executive control</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3473,7 +3448,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d325977f0"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898bbab4fd4"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d325977f0"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3533,19 +3521,26 @@
 	<skos:definition>very brief sensory memory of some visual stimuli, that occur in the form of mental pictures.</skos:definition>
 	<skos:prefLabel>iconic memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0b49e"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a33"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3557,12 +3552,6 @@
 	<skos:definition>a system for permanently storing, managing, and retrieving information for later use, items of information stored as long-term memory may be available for a lifetime.</skos:definition>
 	<skos:prefLabel>long term memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b0e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -3587,12 +3576,6 @@
 	<skos:definition>is the ability to perceive an object’s physical properties (such as shape, colour and texture) and apply semantic attributes to the object, which includes the understanding of its use, previous experience with the object and how it relates to others. </skos:definition>
 	<skos:prefLabel>object recognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949cfb"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -3605,19 +3588,26 @@
 	<skos:definition>the power or sense of hearing; the act of hearing.</skos:definition>
 	<skos:prefLabel>audition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8991fadfe01"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3665,6 +3655,7 @@
 	<skos:definition>the process by which contact is made with the lexicon on the basis of an initial acoustic-phonetic or phonological representation of some portion of the speech input, the result of lexical success is a cohort of potential word candidates which are compatible with this initial analysis.</skos:definition>
 	<skos:prefLabel>lexical access</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3683,7 +3674,21 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86c2e871b14"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498ef"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b38"/>
+						<rdf:Description rdf:about="&cogat;trm_4b86c2e871b14"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3695,24 +3700,7 @@
 	<skos:definition>the way that human beings, rather than computers, analyze a sentence or phrase (in spoken language or text) in terms of grammatical constituents, identifying the parts of speech, syntactic relations, etc.</skos:definition>
 	<skos:prefLabel>syntactic parsing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3722,10 +3710,30 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e7c"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d84"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499a8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e7c"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3773,6 +3781,13 @@
 	<skos:definition>learning process in which a new response becomes associated with a particular stimulus.</skos:definition>
 	<skos:prefLabel>association learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991e6e8597"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3782,10 +3797,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991e6e8597"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8991e6e8597"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898acd1f28e"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -3833,31 +3855,26 @@
 	<skos:definition>The outcome of a process during which a choice is made, usually between several possible options</skos:definition>
 	<skos:prefLabel>decision</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949934"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3893,12 +3910,7 @@
 	<skos:definition>The process of identifying a meaningful pattern in raw data.</skos:definition>
 	<skos:prefLabel>pattern recognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -3911,7 +3923,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a5d"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949ad7"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a5d"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -3923,12 +3948,6 @@
 	<skos:definition>No definition submitted yet</skos:definition>
 	<skos:prefLabel>cognitive effort</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899005b11d5"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4013,19 +4032,26 @@
 	<skos:definition>refers to a cognitive ability to separate elements based upon contrast, that is, dark and light, black and white. Many times this definition is expanded from a simple perception based on contrast to include abstract (i.e. non-visual) concepts such as melody/harmony, subject/background and positive/negative space.  The famous optical illusion image depicting both a vase and two profiles of a human face (the Rubin vase) is often used to illustrate the concept of figure ground: Depending on whether the white or black color is seen as the figure (forefront) or the ground (background) the brain will interpret the picture as two different images, and it may be difficult (or even, according to gestalt psychological theory, impossible) to perceive both meaningful images simultaneously.</skos:definition>
 	<skos:prefLabel>figure ground relations</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b00"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b00"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b00"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b00"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4037,6 +4063,13 @@
 	<skos:definition>is how the brain registers the patterns of word formation in a particular language, including inflection, derivation, and composition. </skos:definition>
 	<skos:prefLabel>morphological processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -4046,16 +4079,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4d949c5b0e380"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -4115,6 +4149,13 @@
 	<skos:definition>Suppression of actions that are inappropriate in a given context and that interfere with goal-driven behavior.</skos:definition>
 	<skos:prefLabel>response inhibition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0a252"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dbb"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -4124,32 +4165,13 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a93"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b1968619b00b"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0a252"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b1968619b00b"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b1968619b00b"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b1968619b00b"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -4161,7 +4183,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dbb"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a93"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -4170,6 +4192,25 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e27"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dbb"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e1a"/>
+						<rdf:Description rdf:about="&cogat;trm_4b1968619b00b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949934"/>
+						<rdf:Description rdf:about="&cogat;trm_4cacf3fbc503b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a93"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e27"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4181,12 +4222,6 @@
 	<skos:definition>Amount of time or space that an individual can dedicate to particular task or content without becoming distracted.</skos:definition>
 	<skos:prefLabel>attention span</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f72228f3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4223,6 +4258,13 @@
 	<skos:definition>involves retrieval of segmental and supra-segmental information and the generation of a syllabified phonological word, and the computation of the phonetic form of the intended utterance, referred to as phonetic encoding.  </skos:definition>
 	<skos:prefLabel>phonological encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -4238,16 +4280,18 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4d949c5b0e380"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898c33ee5f8"/>
+						<rdf:Description rdf:about="&cogat;trm_4b86c2e871b14"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -4259,12 +4303,6 @@
 	<skos:definition>a type of rehearsal proposed by Craik and Lockhart (1972) in their Levels of Processing model of memory. Elaborative rehearsal involves deep semantic processing of a to-be-remembered item resulting in the production of durable memories.</skos:definition>
 	<skos:prefLabel>elaborative rehearsal</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4277,12 +4315,6 @@
 	<skos:definition>a presentation to the mind in the form of an idea or image.</skos:definition>
 	<skos:prefLabel>mental representation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89903149aeb"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4323,15 +4355,29 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991e6e8597"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991e6e8597"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8991e6e8597"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4343,31 +4389,33 @@
 	<skos:definition>memory for how to do things; procedural memories are automatically retrieved and utilized for the execution of the step-by-step procedures involved in both cognitive and motor skills.</skos:definition>
 	<skos:prefLabel>procedural memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8a83cac75f5"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8a83cac75f5"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8a83cac75f5"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8a83cac75f5"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949bbf"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4379,22 +4427,11 @@
 	<skos:definition>The ability to focus attention on cues in the environment that are relevant to the task in hand.</skos:definition>
 	<skos:prefLabel>attentional focusing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b4a537644d76"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f72228f3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -4406,10 +4443,38 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b4a537644d76"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f72228f3"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d17"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d10cd776e"/>
+						<rdf:Description rdf:about="&cogat;trm_4b4a537644d76"/>
+						<rdf:Description rdf:about="&cogat;trm_4b9568b2865c2"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898f72228f3"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4469,12 +4534,6 @@
 	<skos:definition>the process of improving motor skills, the smoothness and accuracy of movements.</skos:definition>
 	<skos:prefLabel>motor learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8a83cac75f5"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4527,21 +4586,30 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d32"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949cfb"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d32"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949923"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d32"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949cfb"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d32"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4589,12 +4657,7 @@
 	<skos:definition>A person&#39;s ability to understand things in context</skos:definition>
 	<skos:prefLabel>Central Coherence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -4613,7 +4676,21 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949aae"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4b749b8829eee"/>
+						<rdf:Description rdf:about="&cogat;trm_4b7497a289534"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949aae"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4661,19 +4738,26 @@
 	<skos:definition>the episodic source from which a specific item was acquired (e.g., from a person, a book, or television (Schacter, Kaszniak, Kihlstrom, &amp; Valdiserri, 1991, p. 559).</skos:definition>
 	<skos:prefLabel>source memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dd6"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -4745,12 +4829,6 @@
 	<skos:definition>a process by which specialized nerve cells in the brain respond to specific features of a visual stimulus, such as lines, edges, angle, or movement. </skos:definition>
 	<skos:prefLabel>feature detection</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949aae"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4895,12 +4973,6 @@
 	<skos:definition>the ability to play or sing notes in tune; manner of utterance, specifically the rise and fall in pitch of the voice in speech.</skos:definition>
 	<skos:prefLabel>intonation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4913,12 +4985,6 @@
 	<skos:definition>the process of storing auditory information in memory.  </skos:definition>
 	<skos:prefLabel>auditory encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -4991,12 +5057,7 @@
 	<skos:definition>The process involving understanding feelings with different valences of oneself or of others</skos:definition>
 	<skos:prefLabel>emotion perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5006,10 +5067,30 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8a840d6f969"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949aca"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						<rdf:Description rdf:about="&cogat;trm_4c8a840d6f969"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -5081,6 +5162,13 @@
 	<skos:definition>A positive return for performance of a specific behavior.</skos:definition>
 	<skos:prefLabel>reward</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499d5"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5090,10 +5178,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499d5"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499d5"/>
+						<rdf:Description rdf:about="&cogat;trm_4d54b2cc0f943"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -5171,6 +5266,19 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0b5a7"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e0c"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d40"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5186,13 +5294,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86c2e871b14"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -5204,22 +5306,28 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86c2e871b14"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d40"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e0c"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d40"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949900"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499e3"/>
+						<rdf:Description rdf:about="&cogat;trm_4b86c2e871b14"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949abc"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e0c"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -5267,12 +5375,6 @@
 	<skos:definition>The process by which the brain and mind interpret and understand a visual face stimulus.</skos:definition>
 	<skos:prefLabel>face perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5345,6 +5447,13 @@
 	<skos:definition>a conscious state of mind or predominant emotion.</skos:definition>
 	<skos:prefLabel>mood</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e5b"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5354,10 +5463,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e5b"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e5b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e35"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -5441,12 +5557,6 @@
 	<skos:definition>refers to improved recall of specific episodes or information when the context present at encoding and retrieval are similar.</skos:definition>
 	<skos:prefLabel>context memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5543,18 +5653,7 @@
 	<skos:definition>Face recognition is the process of automatically determining whether two faces are the same person.</skos:definition>
 	<skos:prefLabel>face recognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949912"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949912"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5567,7 +5666,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949912"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -5675,12 +5787,6 @@
 	<skos:definition>A general term referring to the processing of single words, typically in the context of visual or auditory word recognition.</skos:definition>
 	<skos:prefLabel>lexical processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d25"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5705,12 +5811,6 @@
 	<skos:definition>converting vocabulary, words, or morphemes of a language into a code. </skos:definition>
 	<skos:prefLabel>lexical encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5735,12 +5835,6 @@
 	<skos:definition>Emotional memory is the storage and recall of events and details that are couple with the physiological response that was present when the event occurred.  </skos:definition>
 	<skos:prefLabel>emotional memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898fc6722f4"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5753,6 +5847,7 @@
 	<skos:definition>the selection of semantically appropriate lexical items and the generation of a syntactic frame or surface form.  </skos:definition>
 	<skos:prefLabel>grammatical encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -5765,7 +5860,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949e7c"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898c33ee5f8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949e7c"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -5939,12 +6047,6 @@
 	<skos:definition>processing and encoding of sound, words, and all other auditory input for storage and later retrieval. According to Baddeley, processing of auditory information is aided by the concept of the phonological loop, which allows input within our echoic memory.</skos:definition>
 	<skos:prefLabel>auditory coding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -5961,12 +6063,6 @@
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0a769"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899005b11d5"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -5993,6 +6089,7 @@
 	<skos:definition>The maintenance of information regarding task goals in working memory.</skos:definition>
 	<skos:prefLabel>goal maintenance</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6005,7 +6102,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dad"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499e3"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dad"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -6041,12 +6151,6 @@
 	<skos:definition>the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form. </skos:definition>
 	<skos:prefLabel>olfactory perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89912c79030"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6071,12 +6175,6 @@
 	<skos:definition>The selection of one action from a set of possible actions.</skos:definition>
 	<skos:prefLabel>response selection</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949934"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6089,12 +6187,6 @@
 	<skos:definition>the processing and encoding of sound, words, and all other auditory input for storage and later retrieval.</skos:definition>
 	<skos:prefLabel>acoustic encoding</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6119,19 +6211,26 @@
 	<skos:definition>the process in which one uses reasoning consistently to come to a conclusion.</skos:definition>
 	<skos:prefLabel>logical thinking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -6143,6 +6242,7 @@
 	<skos:definition>measurement of one&#39;s own behavior.</skos:definition>
 	<skos:prefLabel>self monitoring</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6155,7 +6255,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b54"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898c0786246"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b54"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -6167,25 +6280,26 @@
 	<skos:definition>largely or wholly involuntary; especially; acting or done spontaneously or unconsciously; done or produced as if by machine; having a self-acting or self-regulating mechanism.</skos:definition>
 	<skos:prefLabel>automaticity</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898acd1f28e"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898acd1f28e"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -6341,12 +6455,6 @@
 	<skos:definition>memory of autobiographical events (times, places, associated emotions, and other contextual knowledge) that can be explicitly stated.</skos:definition>
 	<skos:prefLabel>episodic memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c8bf1b4f"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6383,6 +6491,7 @@
 	<skos:definition>the way human beings process speech or writing and understand it as language.</skos:definition>
 	<skos:prefLabel>language processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6398,10 +6507,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d25"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b0e"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -6461,12 +6577,6 @@
 	<skos:definition>The change that occurs when information that is currently active in the mind is replaced by other information. The information content is typically sensory in nature.</skos:definition>
 	<skos:prefLabel>attention shift</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dad"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6491,12 +6601,6 @@
 	<skos:definition>is the process by which spoken words are selected to be produced, have their phonetics formulated and then finally are articulated by the motor system in the vocal apparatus. Speech production can be spontaneous such as when a person creates the words of a conversation, reaction such as when they name a picture or read aloud a written word, or a vocal imitation such as in speech repetition.  Speech production is not the same as language production since language can also be produced manually by signs. </skos:definition>
 	<skos:prefLabel>speech production</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89922cb6402"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6521,12 +6625,6 @@
 	<skos:definition>the study of speech signals and the processing methods of these signals.</skos:definition>
 	<skos:prefLabel>speech processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89922cb6402"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6593,12 +6691,6 @@
 	<skos:definition>the process by which the sounds of language are heard, interpreted and understood. </skos:definition>
 	<skos:prefLabel>speech perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6635,12 +6727,6 @@
 	<skos:definition>Ability to rotate an object in one&#39;s mind; ability to make perceptual judgments on a new spatial configuration of an object.</skos:definition>
 	<skos:prefLabel>mental rotation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990810541d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -6701,6 +6787,7 @@
 	<skos:definition>refers to the cognitive processing of the memory of meanings, understandings, and other concept-based knowledge unrelated to specific experiences. </skos:definition>
 	<skos:prefLabel>semantic processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6716,16 +6803,24 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d84"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d92"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d92"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949923"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d84"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d92"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -6737,6 +6832,7 @@
 	<skos:definition>The top-down modulation of cognitive processes based on higher-order representations such as goals or plans.</skos:definition>
 	<skos:prefLabel>cognitive control</skos:prefLabel>
 	<skos:altLabel>executive control</skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6755,7 +6851,21 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bb1"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898c0786246"/>
+						<rdf:Description rdf:about="&cogat;trm_4b9568b2865c2"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949bb1"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -6791,6 +6901,13 @@
 	<skos:definition>two-stage process in which attention is distributed uniformly over the external visual scene and processing of information is performed in parallel, attention is then concentrated to a specific area of the visual scene (i.e. it is focused), and processing is performed in a serial fashion.</skos:definition>
 	<skos:prefLabel>visual attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86dbcd8ff78"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6800,16 +6917,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86dbcd8ff78"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4b86dbcd8ff78"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898f72228f3"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b86dbcd8ff78"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -6905,6 +7023,7 @@
 	<skos:definition>The process by which a response (neural or behavioral) is diminished.</skos:definition>
 	<skos:prefLabel>inhibition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -6914,7 +7033,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a4f"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -6926,16 +7045,25 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a4f"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d76"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4cacf3fbc503b"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d76"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a93"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a4f"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -6959,12 +7087,6 @@
 	<skos:definition>Memory for facts, and that can be consciously articulated such as by recall or recognition.</skos:definition>
 	<skos:prefLabel>declarative memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949abc"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7049,12 +7171,6 @@
 	<skos:definition>is a grouping of vocabulary within a language, organizing words which are interrelated and define each other in various ways. Also referred to as a semantic field.  </skos:definition>
 	<skos:prefLabel>semantic category</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7115,6 +7231,13 @@
 	<skos:definition>the construction of thought processes, including remembering, problem solving, and decision-making, from childhood through adolescence to adulthood.</skos:definition>
 	<skos:prefLabel>cognitive development</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b2b"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -7124,10 +7247,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b2b"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b2b"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89903149aeb"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -7223,12 +7353,6 @@
 	<skos:definition>the observation that the speed and accuracy with which an object is detected are first briefly enhanced (for perhaps 100-300 milliseconds) after the object is attended, and then detection speed and accuracy are impaired (for perhaps 500-3000 milliseconds).</skos:definition>
 	<skos:prefLabel>inhibition of return</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949879"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7277,6 +7401,7 @@
 	<skos:definition>the reasoner must draw a conclusion based on a conditional, or “if…then,” proposition.</skos:definition>
 	<skos:prefLabel>conditional reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -7289,7 +7414,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4cacee4a1d875"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						<rdf:Description rdf:about="&cogat;trm_4cacee4a1d875"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7349,12 +7487,6 @@
 	<skos:definition>the quality, fact, or condition of being conventional; conventional behavior or act; a conventional form, usage, or rule. </skos:definition>
 	<skos:prefLabel>conventionality</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949b54"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7535,12 +7667,6 @@
 	<skos:definition>refers to the extent that one can allocate their processing resources.</skos:definition>
 	<skos:prefLabel>attention capacity</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bf6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7565,12 +7691,6 @@
 	<skos:definition>the ability to respond discretely to specific visual, auditory or tactile stimuli.</skos:definition>
 	<skos:prefLabel>focused attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f72228f3"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7583,12 +7703,6 @@
 	<skos:definition>the process of subvocally repeating material that is to be stored in memory.  </skos:definition>
 	<skos:prefLabel>articulatory rehearsal</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c33ee5f8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7601,12 +7715,7 @@
 	<skos:definition>The process of maintaining sound information online for a limited amount of time.</skos:definition>
 	<skos:prefLabel>phonological working memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a0d"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -7616,10 +7725,30 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a0d"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d84"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a85"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a0d"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d84"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7655,19 +7784,26 @@
 	<skos:definition>background activity that necessarily precedes conscious mental activity; major purpose is the preparation of sensory input for use in focal-attentive processes including encoding of the basic properties of sensory input.</skos:definition>
 	<skos:prefLabel>preattentive processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d17"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d17"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7691,12 +7827,6 @@
 	<skos:definition>a type of perceptual task requiring attention that typically involves an active scan of the visual environment for a particular object or feature (the target) among other objects or features (the distractors).</skos:definition>
 	<skos:prefLabel>visual search</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b75ea4ddd896"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7733,12 +7863,6 @@
 	<skos:definition>is a form of dexterity play or performance in which one or more artists physically interact with props such as balls, hoops, rings, poi, staff, devil sticks, or clubs. Object manipulation can be considered an advanced combinatorial form of sports, dance, and games.</skos:definition>
 	<skos:prefLabel>object manipulation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bdb"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -7763,31 +7887,33 @@
 	<skos:definition>The strategy when  one uses deduction, induction, or abduction to evaluate preconditions and rules to determnie a conclusion.  </skos:definition>
 	<skos:prefLabel>logical reasoning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b749b8829eee"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b8c2d071"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4b749b8829eee"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898b8c2d071"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7847,31 +7973,26 @@
 	<skos:definition>A limited-capacity and short-lasting representation of information in the mind. The duration of short-term memory is on the order of seconds, while its capacity is on the order of 4 to 9 independent items.</skos:definition>
 	<skos:prefLabel>short term memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a33"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7919,12 +8040,7 @@
 	<skos:definition>the ability of a reader to recognize written words correctly and virtually effortlessly.</skos:definition>
 	<skos:prefLabel>word recognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499c7"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -7937,7 +8053,27 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499c7"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b29660b0"/>
+						<rdf:Description rdf:about="&cogat;trm_4d949c5b0e380"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499c7"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -7986,12 +8122,6 @@
 	<skos:prefLabel>spatial working memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0b5a7"/>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949df1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 </owl:Class>
 
 
@@ -8051,6 +8181,13 @@
 	<skos:definition>is a spatial depiction that the brain codes for in terms of sensory inputs from muscles, tendons, and joints (e.g.,the joint angles used to reach a point in space).  </skos:definition>
 	<skos:prefLabel>kinaesthetic representation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89926767870"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8060,10 +8197,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89926767870"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c89926767870"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949c04"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -8099,12 +8243,6 @@
 	<skos:definition>No definition submitted yet</skos:definition>
 	<skos:prefLabel>lexical retrieval</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ef"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8213,12 +8351,6 @@
 	<skos:definition>a formal utterance of an authoritative opinion; the process of forming an opinion or evaluation by discerning and comparing, an opinion or estimate so formed; a proposition stating something believed or asserted.</skos:definition>
 	<skos:prefLabel>judgment</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b75ea4ddd896"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8279,12 +8411,6 @@
 	<skos:definition>is the sequence of the syntactic constituents of a language.</skos:definition>
 	<skos:prefLabel>word order</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499a8"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8297,12 +8423,6 @@
 	<skos:definition>refers to the learners&#39; ability to make adjustments in their own learning processes in response to their perception of feedback regarding their current status of learning. </skos:definition>
 	<skos:prefLabel>Self-Regulation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990480ad0f"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8387,19 +8507,26 @@
 	<skos:definition>The action of coordinating complex tongue and mouth movements in order to produce sound. </skos:definition>
 	<skos:prefLabel>articulatory planning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990b07a037"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8990b07a037"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -8423,6 +8550,7 @@
 	<skos:definition>The amount of demand placed on working memory, typically expressed along some continuum and within a theoretical maximum.</skos:definition>
 	<skos:prefLabel>cognitive load</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8435,7 +8563,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d325977f0"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c40d4054f38b"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d325977f0"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -8471,12 +8612,6 @@
 	<skos:definition>Often used as a synonym of &#34;response inhibition&#34; to describe the inhibition of actions. </skos:definition>
 	<skos:prefLabel>behavioral inhibition (cognitive)</skos:prefLabel>
 	<skos:altLabel>behavioral inhibition</skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a93"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8549,6 +8684,13 @@
 	<skos:definition>theory of prediction based on observations.</skos:definition>
 	<skos:prefLabel>inductive inference</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d4e"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8564,10 +8706,18 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d4e"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d4e"/>
+						<rdf:Description rdf:about="&cogat;trm_4cacf22a22d80"/>
+						<rdf:Description rdf:about="&cogat;trm_4d54b61a14a14"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -8579,31 +8729,26 @@
 	<skos:definition>The process of retrieving previously stored information, done without the aid of external cues.</skos:definition>
 	<skos:prefLabel>recall</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a33"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a33"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -8627,6 +8772,7 @@
 	<skos:definition>the cognitive ability to discriminate items on the basis of contrasts in sonorance, manner, place, or voicing in auditory stimuli. </skos:definition>
 	<skos:prefLabel>acoustic phonetic processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8645,7 +8791,21 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89924414c69"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898bbab4fd4"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89922cb6402"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89924414c69"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -8789,12 +8949,6 @@
 	<skos:definition>the forgetting of information due to interference from the traces of events or learning that occurred prior to the materials to be remembered; occurs when in any given context, past memories inhibit an individual’s full potential to retain new memories.</skos:definition>
 	<skos:prefLabel>proactive inhibition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dad"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8843,6 +8997,7 @@
 	<skos:definition>the loss of memory over time.</skos:definition>
 	<skos:prefLabel>memory decay</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8855,7 +9010,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9499f1"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499e3"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499f1"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -8891,12 +9059,6 @@
 	<skos:definition>Type of memory in which experiences increases performance of task without one&#39;s conscious awareness of these previous experiences. This type of memory applies to habit learning, skills, conditioning.</skos:definition>
 	<skos:prefLabel>implicit memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8909,12 +9071,6 @@
 	<skos:definition>episodes recollected from an individual’s life, based on a combination of episodic (personal experiences and specific objects, people and events experienced at particular time and place) and semantic (general knowledge and facts about the world) memory. </skos:definition>
 	<skos:prefLabel>autobiographical recall</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898c8bf1b4f"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8939,12 +9095,6 @@
 	<skos:definition>takes place whenever a reader or listener cognitively processes a language utterance, either in isolation or in the context of a conversation or a text. </skos:definition>
 	<skos:prefLabel>sentence processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d168898db"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -8969,6 +9119,13 @@
 	<skos:definition>the extraction of information from signals propagated undersea, in the atmosphere, or in the solid earth in the presence of acoustic noise.</skos:definition>
 	<skos:prefLabel>acoustic processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -8978,22 +9135,24 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8991fadfe01"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949d69"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c8991fadfe01"/>
+						<rdf:Description rdf:about="&cogat;trm_4c40d1d16071e"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949d69"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9005,6 +9164,7 @@
 	<skos:definition>The process of distinguishing objects based on the wavelengths of the light they reflect or emit.</skos:definition>
 	<skos:prefLabel>color perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9017,7 +9177,20 @@
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949af3"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9499b8"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949af3"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9029,31 +9202,7 @@
 	<skos:definition>The ability to maintain visual information online for a limited time interval (~ 4 sec). This information has a capacity of ~15 items and is not stored permanently.</skos:definition>
 	<skos:prefLabel>visual working memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498df"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0b49e"/>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949be9"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9072,6 +9221,35 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89913f80802"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a6a"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498df"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949be9"/>
+						<rdf:Description rdf:about="&cogat;trm_4c3e0add96550"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89913f80802"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a6a"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498df"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9095,19 +9273,26 @@
 	<skos:definition>the ability for a person to connect emotional states to themselves and others and understand that other people may have different  beliefs, desires, or intentions from one&#39;s self.  It is intimately connected with the development of a person&#39;s ability to analyze and interpret the intentions of others.</skos:definition>
 	<skos:prefLabel>theory of mind</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b4b463aa"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b4b463aa"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898b4b463aa"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c898b4b463aa"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9119,12 +9304,6 @@
 	<skos:definition>impeded retrieval and performance of previously learnt information due to newly acquired and practiced information.</skos:definition>
 	<skos:prefLabel>retroactive interference</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949900"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -9149,6 +9328,13 @@
 	<skos:definition>No definition submitted yet</skos:definition>
 	<skos:prefLabel>processing capacity</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d325977f0"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9158,10 +9344,17 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c40d325977f0"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c40d325977f0"/>
+						<rdf:Description rdf:about="&cogat;trm_4b9568b2865c2"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -9197,6 +9390,25 @@
 	<skos:definition>skill in perceiving the visual world, transforming and modifying initial perceptions, and mentally recreating spatial aspects of one&#39;s visual experience without the relevant stimuli.</skos:definition>
 	<skos:prefLabel>spatial ability</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89926767870"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949df1"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9212,28 +9424,20 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990810541d"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c89926767870"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949df1"/>
+						<rdf:Description rdf:about="&cogat;trm_4b9568b2865c2"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949b00"/>
+						<rdf:Description rdf:about="&cogat;trm_4c8990810541d"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4b9568b2865c2"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89926767870"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949df1"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -9257,12 +9461,6 @@
 	<skos:definition>a part of memory  preserving some characteristics of our senses pertaining to visual experience.</skos:definition>
 	<skos:prefLabel>visual memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dd6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -9311,12 +9509,6 @@
 	<skos:definition>No definition submitted yet</skos:definition>
 	<skos:prefLabel>motor execution</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bdb"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -9329,12 +9521,6 @@
 	<skos:definition>the process of alerting one person to a stimulus through nonverbal cues such as finger pointing or gazing. It is one of the first signs of the development of a theory of mind in babies and serves as an important step to later language and social development.</skos:definition>
 	<skos:prefLabel>Joint Attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89926767870"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 </owl:Class>
 
@@ -9347,19 +9533,26 @@
 	<skos:definition>the sensory perception of thermal stimuli.</skos:definition>
 	<skos:prefLabel>thermosensation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89910b7f8bc"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89910b7f8bc"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c89910b7f8bc"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c89910b7f8bc"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9371,6 +9564,7 @@
 	<skos:definition>Ability to interpret information from visible light reaching the eye.</skos:definition>
 	<skos:prefLabel>visual perception</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9380,13 +9574,7 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb9498ce"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898be57fcbc"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899211a965c"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
@@ -9398,16 +9586,25 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899211a965c"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898be57fcbc"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c899211a965c"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb9498ce"/>
+						<rdf:Description rdf:about="&cogat;trm_4c899211a965c"/>
+						<rdf:Description rdf:about="&cogat;trm_4c89913f80802"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898be57fcbc"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+
 </owl:Class>
 
 
@@ -9426,12 +9623,6 @@
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0a769"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949923"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 </owl:Class>
 
 
@@ -9447,12 +9638,6 @@
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
 			<owl:someValuesFrom rdf:resource="&cogat;trm_4a3fd79d0aeb6"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4d949c5b0e380"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -9491,54 +9676,7 @@
 	<skos:definition>The function of supervising motor activities</skos:definition>
 	<skos:prefLabel>motor control</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898be57fcbc"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a41"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898ff0bea97"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990480ad0f"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
@@ -9554,10 +9692,73 @@
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898f079d05e"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a41"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
 			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949dc8"/>
 		</owl:Restriction>
 	</rdfs:subClassOf>
-	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c8990480ad0f"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898be57fcbc"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949bbf"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;trm_4c898ff0bea97"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;trm_4c3e0add96550"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949c04"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898f079d05e"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a41"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949dc8"/>
+						<rdf:Description rdf:about="&cogat;trm_4c8990480ad0f"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898be57fcbc"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949bbf"/>
+						<rdf:Description rdf:about="&cogat;trm_4c898ff0bea97"/>
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
@@ -9569,19 +9770,26 @@
 	<skos:definition>is when one has to make an effort to consciously recollect a memory when stimuli in memory do not bear stable relations to each other and therefore retrieval cannot be automatically driven by strong, stable, and unambiguous stimulus or context relations. </skos:definition>
 	<skos:prefLabel>active retrieval</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
-	<rdfs:subClassOf>
-		<owl:Restriction>
-			<owl:onProperty rdf:resource="&cogat;measured_by"/>
-			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
-		</owl:Restriction>
-	</rdfs:subClassOf>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+			<owl:someValuesFrom rdf:resource="&cogat;tsk_4a57abb949a25"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="&cogat;measured_by"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+						<rdf:Description rdf:about="&cogat;tsk_4a57abb949a25"/>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+
 </owl:Class>
 
 
