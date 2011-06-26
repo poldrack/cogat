@@ -44,8 +44,8 @@
 -->
 
 <owl:ObjectProperty rdf:about="&ro;has_part"/>
-<owl:ObjectProperty rdf:about="&cogat;measured_by"><rdfs:label>measured_by</rdfs:label><rdfs:domain rdf:resource="&cogat;MentalConcept"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>
-<owl:ObjectProperty rdf:about="&cogat;descended_from"><rdfs:label>descended_from</rdfs:label><rdfs:domain rdf:resource="&cogpo;COGPO_00049"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&cogat;measured_by"><rdfs:label>measured_by</rdfs:label><obo:IAO_0000115>The relationship between a mental concept and a measurement that is thought to reflect the activity of that mental concept.</obo:IAO_0000115><rdfs:domain rdf:resource="&cogat;MentalConcept"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&cogat;descended_from"><rdfs:label>descended_from</rdfs:label><obo:IAO_0000115>The relationship between a task and another task of which the former is an adaptation.</obo:IAO_0000115><rdfs:domain rdf:resource="&cogpo;COGPO_00049"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>
 
 
 <owl:Class rdf:about="&cogat;MentalConcept">

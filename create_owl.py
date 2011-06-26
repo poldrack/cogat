@@ -49,7 +49,7 @@ for a in annotation_properties:
 # add object properties#
 properties=properties+'\n\n<!--\n//Object Properties\n-->\n\n'
 
-object_properties=['<owl:ObjectProperty rdf:about="&ro;has_part"/>','<owl:ObjectProperty rdf:about="&cogat;measured_by"><rdfs:label>measured_by</rdfs:label><rdfs:domain rdf:resource="&cogat;MentalConcept"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>','<owl:ObjectProperty rdf:about="&cogat;descended_from"><rdfs:label>descended_from</rdfs:label><rdfs:domain rdf:resource="&cogpo;COGPO_00049"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>']
+object_properties=['<owl:ObjectProperty rdf:about="&ro;has_part"/>','<owl:ObjectProperty rdf:about="&cogat;measured_by"><rdfs:label>measured_by</rdfs:label><obo:IAO_0000115>The relationship between a mental concept and a measurement that is thought to reflect the activity of that mental concept.</obo:IAO_0000115><rdfs:domain rdf:resource="&cogat;MentalConcept"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>','<owl:ObjectProperty rdf:about="&cogat;descended_from"><rdfs:label>descended_from</rdfs:label><obo:IAO_0000115>The relationship between a task and another task of which the former is an adaptation.</obo:IAO_0000115><rdfs:domain rdf:resource="&cogpo;COGPO_00049"/><rdfs:range rdf:resource="&cogpo;COGPO_00049"/></owl:ObjectProperty>']
 
 # NOTE: need to change the measured_by relation to have contrasts rather than tasks as its domain
 
