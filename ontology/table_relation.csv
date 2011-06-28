@@ -1,0 +1,7 @@
+"T1";"is a kind of";"is-a-kind-of";"Foundational";"The subject is a subtype of the object.";"The 3-Back test is-a-kind-of N-Back test.";"100";"is not a kind of"
+"T10";"is a synonym of";"has-synonym";"Terminological";"The two terms are transitively synonomous. ";"Declarative memory is a synonym of explicit memory..";"200";"is not a synonym of"
+"T15";"is descended from";"descended-from";"Cognitive";"The subject task is derivative of the predicate task.";"Masked lexical decision task derives from lexical decision task.";"410";"is not descended from"
+"T16";"is measured by";"is-measured-by";"Cognitive";"The concept can be measured by the task:contrast.";"Conflict detection is measured by the contrast of incongruent - congruent trials in the color-word stroop task";"501";"is not measured by"
+"T17";"has literature association";"has-literature-association";"Citational";"Object found in cited literature.";"for example...";"100000";"has no literature association"
+"T2";"is a part of";"is-a-part-of";"Foundational";"The predicate is a constituent element of the subject (either integral or proper). ";"Cue specification is a part of memory retrieval.";"101";"is not a part of"
+"T5";"is preceded by";"preceded-by";"Temporal";"The subject is preceded temporally by the predicate.";"Example of this relation here.";"302";"is not preceded by"

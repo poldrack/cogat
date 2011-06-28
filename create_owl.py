@@ -52,8 +52,6 @@ additional_namespaces=['xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"','xmlns
 for a in additional_namespaces:
     rdf_preamble=rdf_preamble.replace('> ','\n\t%s> '%a)
 
-print rdf_preamble
-
 rdf_entities=['dc "http://purl.org/dc/elements/1.1/"','ro "http://www.obofoundry.org/ro/ro.owl#"','cogat "http://www.cognitiveatlas.org/ontology/cogat.owl#"','rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"','skos "http://www.w3.org/2004/02/skos/core#"','rdfs "http://www.w3.org/2000/01/rdf-schema#"','span "http://www.ifomis.org/bfo/1.1/span#"','cogpo "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#"']
 
 entities='<!DOCTYPE rdf:RDF [\n'
@@ -168,23 +166,27 @@ for c in owl_classes:
 
 conditions_file='ontology/type_condition.csv'
 conditions=[]
+conditions_dict={}
 f=open(conditions_file,'r')
 for l in f.readlines():
     conditions.append(l.strip().replace('"','').split(';'))
 
 for c in conditions:
     owl_task_dict[c[2]]['conditions'].append(c)
-
+    conditions_dict[c[0]]=c[2]
+    
 # read in contrasts
 
 contrasts_file='ontology/type_contrast.csv'
 contrasts=[]
+contrasts_dict={}
 f=open(contrasts_file,'r')
 for l in f.readlines():
     contrasts.append(l.strip().replace('"','').split(';'))
 
 for c in contrasts:
     owl_task_dict[c[2]]['contrasts'].append(c)
+    contrasts_dict[c[0]]=c[2]
 
 # read in relations
 
@@ -210,9 +212,9 @@ relations.remove(relations[0])  # get rid of legend
 
 for r in relations:
     if owl_dict.has_key(r[2]):
-        owl_dict[r[2]]['relations'].append([r[3],r[4]])
+        owl_dict[r[2]]['relations'].append(r)
     elif owl_task_dict.has_key(r[2]):
-        owl_task_dict[r[2]]['relations'].append([r[3],r[4]])
+        owl_task_dict[r[2]]['relations'].append(r)
     #else:
     #    print 'problem with %s'%r
 
@@ -237,25 +239,32 @@ for a in owl_dict.iterkeys():
     measured_by_relations=[]
     if len(d['relations'])>0:
         for r in d['relations']:
-            if r[0]=='T1' and owl_dict.has_key(r[1]):
+            if r[3]=='T1' and owl_dict.has_key(r[4]):
                 superClassSet=1
-                f.write('\t<rdfs:subClassOf rdf:resource="&cogat;%s"/>\n'%r[1])
-            elif r[0]=='T2' and owl_dict.has_key(r[1]):
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
-            elif r[0]=='T16' and owl_task_dict.has_key(r[1]):
-                measured_by_relations.append(r[1])
-                
+                f.write('\t<rdfs:subClassOf rdf:resource="&cogat;%s"/>\n'%r[4])
+            elif r[3]=='T2' and owl_dict.has_key(r[4]):
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[4])
+            elif r[3]=='T16' and contrasts_dict.has_key(r[11]):
+                 measured_by_relations.append(r)
 
     if not superClassSet:
         f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
 #    if 0:
     if len(measured_by_relations)>1:
-        for m in set(measured_by_relations):
-            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%m)
+        # first need to clean out duplicate entries:
+        cnt_names=set([c[11] for c in measured_by_relations])
+        good_measured_by_relations=[]
+        for m in measured_by_relations:
+            if m[11] in cnt_names:
+                good_measured_by_relations.append(m)
+        print good_measured_by_relations
+        
+        for m in good_measured_by_relations:
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%m[11])
         f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t\t<owl:allValuesFrom>\n\t\t\t\t\t<owl:Class>\n\t\t\t\t\t\t<owl:unionOf rdf:parseType="Collection">\n')
         #print measured_by_relations
-        for m in set(measured_by_relations):
-            f.write('\t\t\t\t\t\t<rdf:Description rdf:about="&cogat;%s"/>\n'%m)
+        for m in good_measured_by_relations:
+            f.write('\t\t\t\t\t\t<rdf:Description rdf:about="&cogat;%s"/>\n'%m[11])
         f.write('\t\t\t\t\t\t</owl:unionOf>\n\t\t\t\t\t</owl:Class>\n\t\t\t\t</owl:allValuesFrom>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n\n')
 
     f.write('</owl:Class>\n\n\n')
