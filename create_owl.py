@@ -156,9 +156,35 @@ for c in owl_classes:
                 owl_task_dict[id][f]=getcontent(e)
     owl_task_dict[id]['dc:Title']=owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
     owl_task_dict[id]['relations']=[]
+    owl_task_dict[id]['conditions']=[]
+    owl_task_dict[id]['contrasts']=[]
+  
     #owl_task_dict[id]['superClass']='&span;Process'
     owl_task_dict[id]['superClass']='&cogpo;COGPO_00049'
     ctr+=1
+
+
+# read in conditions
+
+conditions_file='ontology/type_condition.csv'
+conditions=[]
+f=open(conditions_file,'r')
+for l in f.readlines():
+    conditions.append(l.strip().replace('"','').split(';'))
+
+for c in conditions:
+    owl_task_dict[c[2]]['conditions'].append(c)
+
+# read in contrasts
+
+contrasts_file='ontology/type_contrast.csv'
+contrasts=[]
+f=open(contrasts_file,'r')
+for l in f.readlines():
+    contrasts.append(l.strip().replace('"','').split(';'))
+
+for c in contrasts:
+    owl_task_dict[c[2]]['contrasts'].append(c)
 
 # read in relations
 
@@ -174,8 +200,7 @@ relation_file='ontology/table_assertion.csv'
 relations=[]
 f=open(relation_file,'r')
 for l in f.readlines():
-    relations.append(l.strip().replace('"','').split(';'))
-
+    relations.append(l.strip().replace('"','').split(';'))    
 
 f.close()
 
@@ -244,14 +269,53 @@ for a in owl_task_dict.iterkeys():
     f.write('\t<rdfs:label>%s</rdfs:label>\n'%d['dc:Title'])
     for l in attrs_to_loop:
         f.write('\t<%s>%s</%s>\n'%(l,d[l],l))
+    # write out conditions
+    if len(d['conditions'])>0:
+        for c in d['conditions']:
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;has_part"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[0])
+    if len(d['contrasts'])>0:
+        for c in d['contrasts']:
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;has_contrast"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[0])
+   
     if len(d['relations'])>0:
         for r in d['relations']:
             if r[0]=='T15' and owl_task_dict.has_key(r[1]):
-                print r
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;descended_from"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
+                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;descended_from"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
     f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
     f.write('</owl:Class>\n\n\n')
-                
+
+# write out conditions as classes
+for a in owl_task_dict.iterkeys():
+    if len(owl_task_dict[a]['conditions'])>0:
+        for c in owl_task_dict[a]['conditions']:
+            c = [x.replace('&#34;','') for x in c]
+            c = [x.replace('&#34','') for x in c]
+            c = [x.replace('&','and') for x in c]
+            condname=owl_task_dict[a]['dc:Title'].replace(' ','_')+'-'+c[3].replace(' ','_')
+            f.write('<owl:Class rdf:about="&cogat;%s">\n'%c[0])
+            f.write('\t<dc:identifier>%s</dc:identifier>\n'%c[0])
+            f.write('\t<skos:definition>%s</skos:definition>\n'%c[4])
+            #print c[4]
+            f.write('\t<rdfs:label>%s</rdfs:label>\n'%condname)
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[2])
+            f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00300"/>\n')
+            f.write('</owl:Class>\n\n\n')
+          
+# write out contrasts as classes
+for a in owl_task_dict.iterkeys():
+    if len(owl_task_dict[a]['contrasts'])>0:
+        for c in owl_task_dict[a]['contrasts']:
+            c = [x.replace('&#34;','') for x in c]
+            c = [x.replace('&#34','') for x in c]
+            c = [x.replace('&','and') for x in c]
+            contname=owl_task_dict[a]['dc:Title'].replace(' ','_')+'-'+c[3].replace(' ','_')
+            f.write('<owl:Class rdf:about="&cogat;%s">\n'%c[0])
+            f.write('\t<dc:identifier>%s</dc:identifier>\n'%c[0])
+            f.write('\t<rdfs:label>%s</rdfs:label>\n'%contname)
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;is_related_to"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[2])
+            f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00109"/>\n')
+            f.write('</owl:Class>\n\n\n')
+          
 
 
 # add basic classes
