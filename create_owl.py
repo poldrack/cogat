@@ -30,7 +30,7 @@ Code to translate the Cognitive Atlas database dump into OWL format.
 
 # first fix the concepts file
 
-rdf_file='ontology/concepts.rdf'
+rdf_file='ontology/all_concepts.rdf'
 
 f=open(rdf_file,'r')
 # 1.  change from skos:Concept to owl:Class
@@ -118,7 +118,7 @@ for c in owl_classes:
     ctr+=1
 
 # read in tasks
-rdf_file='ontology/tasks.rdf'
+rdf_file='ontology/all_tasks.rdf'
 f=open(rdf_file,'r')
 # 1.  change from skos:Concept to owl:Class
 r=[a.replace('skos:Concept','owl:Class').strip() for a in f.readlines()]
@@ -151,7 +151,7 @@ for c in owl_classes:
     for e in cl:
         for f in task_fields:
             if e.find(f)>-1:
-                owl_task_dict[id][f]=getcontent(e)
+                owl_task_dict[id][f]=getcontent(e).replace('&','and')
     owl_task_dict[id]['dc:Title']=owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
     owl_task_dict[id]['relations']=[]
     owl_task_dict[id]['conditions']=[]
@@ -185,8 +185,11 @@ for l in f.readlines():
     contrasts.append(l.strip().replace('"','').split(';'))
 
 for c in contrasts:
-    owl_task_dict[c[2]]['contrasts'].append(c)
-    contrasts_dict[c[0]]=c[2]
+    try:
+        owl_task_dict[c[2]]['contrasts'].append(c)
+        contrasts_dict[c[0]]=c[2]
+    except:
+        print 'problem adding %s'%c
 
 # read in relations
 
@@ -257,7 +260,7 @@ for a in owl_dict.iterkeys():
         for m in measured_by_relations:
             if m[11] in cnt_names:
                 good_measured_by_relations.append(m)
-        print good_measured_by_relations
+#        print good_measured_by_relations
         
         for m in good_measured_by_relations:
             f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%m[11])
