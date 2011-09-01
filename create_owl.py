@@ -49,7 +49,8 @@ try:
 except:
     existing_pickle_count=0
     id_dictionary={}
-    dict_ctr=0
+    # save the first 100 entries for reserved words
+    dict_ctr=101
     
 # first fix the concepts file
 
@@ -140,13 +141,13 @@ for c in owl_classes:
             if e.find(f)>-1:
                 owl_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
     owl_dict[id]['dc:Title']=make_sentence_case(owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ',''))
-    if not id_dictionary.has_key(owl_dict[id]['dc:Title']):
-        id_dictionary[owl_dict[id]['dc:Title']]='CAO_%05d'%dict_ctr
+    if not id_dictionary.has_key(id):
+        id_dictionary[id]='CAO_%05d'%dict_ctr
         dict_ctr+=1
         
     owl_dict[id]['dc:identifier']=id
 #    owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()
-    owl_dict[id]['rdf:about']=id_dictionary[owl_dict[id]['dc:Title']]
+    owl_dict[id]['rdf:about']=id_dictionary[id]
     owl_dict[id]['skos:prefLabel']=make_sentence_case(owl_dict[id]['skos:prefLabel'])
     owl_dict[id]['relations']=[]
     owl_dict[id]['superClass']='&cogat;CAO_00001'
@@ -188,18 +189,14 @@ for c in owl_classes:
             if e.find(f)>-1:
                 owl_task_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
     owl_task_dict[id]['dc:Title']=make_sentence_case(owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ',''))
-    if not id_dictionary.has_key(owl_task_dict[id]['dc:Title']):
-        id_dictionary[owl_task_dict[id]['dc:Title']]='CAO_%05d'%dict_ctr
+    if not id_dictionary.has_key(id):
+        id_dictionary[id]='CAO_%05d'%dict_ctr
         dict_ctr+=1
         
     owl_task_dict[id]['dc:identifier']=id
 #    owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()
-    owl_task_dict[id]['rdf:about']=id_dictionary[owl_task_dict[id]['dc:Title']]
+    owl_task_dict[id]['rdf:about']=id_dictionary[id]
     owl_task_dict[id]['skos:prefLabel']=make_sentence_case(owl_task_dict[id]['skos:prefLabel'])
-    owl_task_dict[id]['relations']=[]
-    owl_task_dict[id]['superClass']='&cogat;CAO_00001'
-    ctr+=1
-        
     owl_task_dict[id]['relations']=[]
     owl_task_dict[id]['conditions']=[]
     owl_task_dict[id]['contrasts']=[]
@@ -219,7 +216,10 @@ for l in f.readlines():
 for c in conditions:
     owl_task_dict[c[2]]['conditions'].append(c)
     conditions_dict[c[0]]=c[2]
-    
+    if not id_dictionary.has_key(c[0]):
+       id_dictionary[c[0]]='CAO_%05d'%dict_ctr
+       dict_ctr+=1
+         
 # read in contrasts
 
 contrasts_file='ontology/type_contrast.csv'
@@ -233,6 +233,9 @@ for c in contrasts:
     try:
         owl_task_dict[c[2]]['contrasts'].append(c)
         contrasts_dict[c[0]]=c[2]
+        if not id_dictionary.has_key(c[0]):
+           id_dictionary[c[0]]='CAO_%05d'%dict_ctr
+           dict_ctr+=1
     except:
         print 'problem adding %s'%c
 
@@ -278,7 +281,7 @@ f.write(properties)
 attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
 for a in owl_dict.iterkeys():
     d=owl_dict[a]
-    f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[owl_dict[a]['dc:Title']])
+    f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[a])
     f.write('\t<rdfs:label>%s</rdfs:label>\n'%d['dc:Title'])
     f.write('\t<dc:identifier>%s</dc:identifier>\n'%a)
     for l in attrs_to_loop:
@@ -288,15 +291,13 @@ for a in owl_dict.iterkeys():
     if len(d['relations'])>0:
         for r in d['relations']:
             if r[3]=='T1' and owl_dict.has_key(r[4]):
-                superClassSet=1
-                f.write('\t<rdfs:subClassOf rdf:resource="&cogat;%s"/>\n'%r[4])
+                d['superClass']='&cogat;'+id_dictionary[r[4]]
             elif r[3]=='T2' and owl_dict.has_key(r[4]):
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[4])
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[r[4]])
             elif r[3]=='T16' and contrasts_dict.has_key(r[11]):
                  measured_by_relations.append(r)
 
-    if not superClassSet:
-        f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
+    f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
 #    if 0:
     if len(measured_by_relations)>1:
         # first need to clean out duplicate entries:
@@ -308,11 +309,11 @@ for a in owl_dict.iterkeys():
 #        print good_measured_by_relations
         
         for m in good_measured_by_relations:
-            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%m[11])
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[m[11]])
         f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t\t<owl:allValuesFrom>\n\t\t\t\t\t<owl:Class>\n\t\t\t\t\t\t<owl:unionOf rdf:parseType="Collection">\n')
         #print measured_by_relations
         for m in good_measured_by_relations:
-            f.write('\t\t\t\t\t\t<rdf:Description rdf:about="&cogat;%s"/>\n'%m[11])
+            f.write('\t\t\t\t\t\t<rdf:Description rdf:about="&cogat;%s"/>\n'%id_dictionary[m[11]])
         f.write('\t\t\t\t\t\t</owl:unionOf>\n\t\t\t\t\t</owl:Class>\n\t\t\t\t</owl:allValuesFrom>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n\n')
 
     f.write('</owl:Class>\n\n\n')
@@ -321,7 +322,7 @@ for a in owl_dict.iterkeys():
 attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
 for a in owl_task_dict.iterkeys():
     d=owl_task_dict[a]
-    f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[owl_task_dict[a]['dc:Title']])
+    f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[a])
     f.write('\t<dc:identifier>%s</dc:identifier>\n'%a)
     f.write('\t<rdfs:label>%s</rdfs:label>\n'%d['dc:Title'])
     for l in attrs_to_loop:
@@ -329,15 +330,16 @@ for a in owl_task_dict.iterkeys():
     # write out conditions
     if len(d['conditions'])>0:
         for c in d['conditions']:
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;has_part"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[0])
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;has_part"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[0]])
     if len(d['contrasts'])>0:
         for c in d['contrasts']:
-                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;has_contrast"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[0])
+                f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;has_contrast"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[0]])
    
     if len(d['relations'])>0:
         for r in d['relations']:
-            if r[0]=='T15' and owl_task_dict.has_key(r[1]):
-                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;descended_from"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%r[1])
+            if r[3]=='T15' and owl_task_dict.has_key(r[4]):
+                 print r
+                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;descended_from"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[r[4]])
     f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
     f.write('</owl:Class>\n\n\n')
 
@@ -349,12 +351,12 @@ for a in owl_task_dict.iterkeys():
             c = [x.replace('&#34','') for x in c]
             c = [x.replace('&','and') for x in c]
             condname=owl_task_dict[a]['dc:Title'].replace(' ','_')+'-'+c[3].replace(' ','_')
-            f.write('<owl:Class rdf:about="&cogat;%s">\n'%c[0])
+            f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[c[0]])
             f.write('\t<dc:identifier>%s</dc:identifier>\n'%c[0])
             f.write('\t<skos:definition>%s</skos:definition>\n'%c[4])
             #print c[4]
             f.write('\t<rdfs:label>%s</rdfs:label>\n'%condname)
-            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[2])
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[2]])
             f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00300"/>\n')
             f.write('</owl:Class>\n\n\n')
           
@@ -366,10 +368,10 @@ for a in owl_task_dict.iterkeys():
             c = [x.replace('&#34','') for x in c]
             c = [x.replace('&','and') for x in c]
             contname=owl_task_dict[a]['dc:Title'].replace(' ','_')+'-'+c[3].replace(' ','_')
-            f.write('<owl:Class rdf:about="&cogat;%s">\n'%c[0])
+            f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[c[0]])
             f.write('\t<dc:identifier>%s</dc:identifier>\n'%c[0])
             f.write('\t<rdfs:label>%s</rdfs:label>\n'%contname)
-            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;is_related_to"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%c[2])
+            f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;is_related_to"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[2]])
             f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00109"/>\n')
             f.write('</owl:Class>\n\n\n')
           
