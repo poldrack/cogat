@@ -58,7 +58,7 @@
 	<dc:Title>graphemic buffer</dc:Title>
 	<dc:Contributor>Tyler Davis</dc:Contributor>
 	<dc:Date>2011-08-15 10:02:50</dc:Date>
-	<skos:definition>a component dedicated to the temporary storage of abstract orthographic representations prior to their format-specific expression in spelling and/or reading.</skos:definition>
+	<skos:definition>a component dedicated to the temporary storage of abstract orthographic representations prior to their format-specific expression in spelling and-or reading.</skos:definition>
 	<skos:prefLabel>graphemic buffer</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -97,7 +97,7 @@
 	<dc:Title>Metacomprehension</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-07 11:08:06</dc:Date>
-	<skos:definition>refers to the learners&#39; ability to monitor the degree to which they understand information being communicated to them, to recognize failures to comprehend, and to employ repair strategies when failures are identified. </skos:definition>
+	<skos:definition>refers to the learnersand#39; ability to monitor the degree to which they understand information being communicated to them, to recognize failures to comprehend, and to employ repair strategies when failures are identified. </skos:definition>
 	<skos:prefLabel>Metacomprehension</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -149,7 +149,7 @@
 	<dc:Title>cognition</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>The process of thought; includes all psychological/mental functions that allow for subsequent reflection given some information.</skos:definition>
+	<skos:definition>The process of thought; includes all psychological-mental functions that allow for subsequent reflection given some information.</skos:definition>
 	<skos:prefLabel>cognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -437,7 +437,7 @@
 	<dc:Title>memory</dc:Title>
 	<dc:Contributor>David Schnyer</dc:Contributor>
 	<dc:Date>2010-01-28 18:19:06</dc:Date>
-	<skos:definition>The ability of an organism to use past events to inform/influence current actions </skos:definition>
+	<skos:definition>The ability of an organism to use past events to inform-influence current actions </skos:definition>
 	<skos:prefLabel>memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -450,7 +450,7 @@
 	<dc:Title>unisensory</dc:Title>
 	<dc:Contributor>Mei-Yen Chen</dc:Contributor>
 	<dc:Date>2011-08-12 13:16:40</dc:Date>
-	<skos:definition>Describes any neural or behavioral process associated with a single sensory modality (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8)</skos:definition>
+	<skos:definition>Describes any neural or behavioral process associated with a single sensory modality (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8)</skos:definition>
 	<skos:prefLabel>unisensory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -682,7 +682,7 @@
 	<dc:Title>multisensory integration</dc:Title>
 	<dc:Contributor>Scott Love</dc:Contributor>
 	<dc:Date>2011-07-28 14:04:21</dc:Date>
-	<skos:definition>The neural process by which unisensory signals are combined to form a new product. It is operationally defined as a multisensory response (neural or behavioral) that is significantly different from the responses evoked by the modality-specific component stimuli (from, Stein et al. (2009) Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8.)</skos:definition>
+	<skos:definition>The neural process by which unisensory signals are combined to form a new product. It is operationally defined as a multisensory response (neural or behavioral) that is significantly different from the responses evoked by the modality-specific component stimuli (from, Stein et al. (2009) Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8.)</skos:definition>
 	<skos:prefLabel>multisensory integration</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4e31d5c79ddfe"/>
@@ -885,7 +885,7 @@
 	<dc:Title>incidental learning</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-12-21 14:32:56</dc:Date>
-	<skos:definition>Learning without explicit knowledge of doing so, but occurring through interaction with the environment (e.g., by observation/copying of behavior or response to reinforcement).</skos:definition>
+	<skos:definition>Learning without explicit knowledge of doing so, but occurring through interaction with the environment (e.g., by observation-copying of behavior or response to reinforcement).</skos:definition>
 	<skos:prefLabel>incidental learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -1621,7 +1621,7 @@
 	<dc:Title>spatial memory</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 11:05:18</dc:Date>
-	<skos:definition>the part of memory  responsible for recording information about one&#39;s environment and its spatial orientation.</skos:definition>
+	<skos:definition>the part of memory  responsible for recording information about oneand#39;s environment and its spatial orientation.</skos:definition>
 	<skos:prefLabel>spatial memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -1771,7 +1771,7 @@
 	<dc:Title>multisensory index (MSI)</dc:Title>
 	<dc:Contributor>Scott Love</dc:Contributor>
 	<dc:Date>2011-07-28 14:27:49</dc:Date>
-	<skos:definition>The proportionate difference between a multisensory response to a cross-modal stimulus and the unisensory response to the most effective modality-specific component stimulus (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8)</skos:definition>
+	<skos:definition>The proportionate difference between a multisensory response to a cross-modal stimulus and the unisensory response to the most effective modality-specific component stimulus (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8)</skos:definition>
 	<skos:prefLabel>multisensory index (MSI)</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -1816,7 +1816,7 @@
 	<dc:Title>linguistic competence</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 13:54:10</dc:Date>
-	<skos:definition>a speaker&#39;s implicit, internalized knowledge of the rules of their language.</skos:definition>
+	<skos:definition>a speakerand#39;s implicit, internalized knowledge of the rules of their language.</skos:definition>
 	<skos:prefLabel>linguistic competence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -2292,7 +2292,7 @@
 	<dc:Title>intrinsic motivation</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 15:57:48</dc:Date>
-	<skos:definition>a highly desired form of incentive that stems from a person&#39;s internal desire for self-satisfaction or pleasure in performing the task itself.</skos:definition>
+	<skos:definition>a highly desired form of incentive that stems from a personand#39;s internal desire for self-satisfaction or pleasure in performing the task itself.</skos:definition>
 	<skos:prefLabel>intrinsic motivation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -2612,7 +2612,7 @@
 	<dc:Title>hill climbing</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-12 15:22:46</dc:Date>
-	<skos:definition>A fast but sometimes unreliable optimization method.  When searching for the minimum/maximum value of a function a random step is taken; if the value improves it replaces the current value, then another random step is taken.</skos:definition>
+	<skos:definition>A fast but sometimes unreliable optimization method.  When searching for the minimum-maximum value of a function a random step is taken; if the value improves it replaces the current value, then another random step is taken.</skos:definition>
 	<skos:prefLabel>hill climbing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -2716,7 +2716,7 @@
 	<dc:Title>spreading activation</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-28 17:24:55</dc:Date>
-	<skos:definition>a method for searching associative networks, neural networks, or semantic networks; the search process is initiated by labeling a set of source nodes (e.g. concepts in a semantic network) with weights or &#34;activation&#34; and then iteratively propagating or &#34;spreading&#34; that activation out to other nodes linked to the source nodes.</skos:definition>
+	<skos:definition>a method for searching associative networks, neural networks, or semantic networks; the search process is initiated by labeling a set of source nodes (e.g. concepts in a semantic network) with weights or and#34;activationand#34; and then iteratively propagating or and#34;spreadingand#34; that activation out to other nodes linked to the source nodes.</skos:definition>
 	<skos:prefLabel>spreading activation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3038,7 +3038,7 @@
 	<dc:Title>binocular vision</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-12 09:40:44</dc:Date>
-	<skos:definition>is vision in which both eyes are used together.  Having two eyes confers at least four advantages over having one. First, it gives a creature a spare eye in case one is damaged. Second, it gives a wider field of view.  Third, it gives binocular summation in which the ability to detect faint objects is enhanced.  Fourth it can give stereopsis in which parallax provided by the two eyes&#39; different positions on the head give precise depth perception.  Such binocular vision is usually accompanied by singleness of vision or binocular fusion, in which a single image is seen despite each eye&#39;s having its own image of any object.  Other phenomena of binocular vision include utrocular discrimination, eye dominance, allelotropia, and binocular rivalry.</skos:definition>
+	<skos:definition>is vision in which both eyes are used together.  Having two eyes confers at least four advantages over having one. First, it gives a creature a spare eye in case one is damaged. Second, it gives a wider field of view.  Third, it gives binocular summation in which the ability to detect faint objects is enhanced.  Fourth it can give stereopsis in which parallax provided by the two eyesand#39; different positions on the head give precise depth perception.  Such binocular vision is usually accompanied by singleness of vision or binocular fusion, in which a single image is seen despite each eyeand#39;s having its own image of any object.  Other phenomena of binocular vision include utrocular discrimination, eye dominance, allelotropia, and binocular rivalry.</skos:definition>
 	<skos:prefLabel>binocular vision</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3128,7 +3128,7 @@
 	<dc:Title>body representation</dc:Title>
 	<dc:Contributor>Russ Poldrack</dc:Contributor>
 	<dc:Date>2011-08-24 07:05:42</dc:Date>
-	<skos:definition>A mental representation of one&#39;s own body</skos:definition>
+	<skos:definition>A mental representation of oneand#39;s own body</skos:definition>
 	<skos:prefLabel>body representation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3257,7 +3257,7 @@
 	<dc:Title>processing stage</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:32</dc:Date>
-	<skos:definition>A subset of mental operations that are confined some feature space of information within a stream and/or hierarchy of mental operations.</skos:definition>
+	<skos:definition>A subset of mental operations that are confined some feature space of information within a stream and-or hierarchy of mental operations.</skos:definition>
 	<skos:prefLabel>processing stage</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3270,7 +3270,7 @@
 	<dc:Title>binocular disparity</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-29 16:15:38</dc:Date>
-	<skos:definition>the difference in image location of an object seen by the left and right eyes, resulting from the eyes&#39; horizontal separation. The brain uses binocular disparity to extract depth information from the two-dimensional retinal images  in stereopsis.</skos:definition>
+	<skos:definition>the difference in image location of an object seen by the left and right eyes, resulting from the eyesand#39; horizontal separation. The brain uses binocular disparity to extract depth information from the two-dimensional retinal images  in stereopsis.</skos:definition>
 	<skos:prefLabel>binocular disparity</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3296,7 +3296,7 @@
 	<dc:Title>metamemory</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 13:19:06</dc:Date>
-	<skos:definition>the learners&#39; awareness of and knowledge about their own memory systems and strategies for using their memories effectively; includes: awareness of different memory strategies, knowledge of which strategy to use for a particular memory task, and knowledge of how to use a given memory strategy most effectively.</skos:definition>
+	<skos:definition>the learnersand#39; awareness of and knowledge about their own memory systems and strategies for using their memories effectively; includes: awareness of different memory strategies, knowledge of which strategy to use for a particular memory task, and knowledge of how to use a given memory strategy most effectively.</skos:definition>
 	<skos:prefLabel>metamemory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3502,7 +3502,7 @@
 	<dc:Title>working memory</dc:Title>
 	<dc:Contributor>Russ Poldrack</dc:Contributor>
 	<dc:Date>2011-08-09 10:29:18</dc:Date>
-	<skos:definition>active maintenance and flexible updating of goal/task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference </skos:definition>
+	<skos:definition>active maintenance and flexible updating of goal-task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference </skos:definition>
 	<skos:prefLabel>working memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4a3fd79d0a891"/>
@@ -3854,7 +3854,7 @@
 	<dc:Title>intelligence</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-28 12:23:24</dc:Date>
-	<skos:definition>the ability to learn or understand or to deal with new or trying situations; the skilled use of reason; the ability to apply knowledge to manipulate one&#39;s environment or to think abstractly as measured by objective criteria; the ability to perform computer functions.</skos:definition>
+	<skos:definition>the ability to learn or understand or to deal with new or trying situations; the skilled use of reason; the ability to apply knowledge to manipulate oneand#39;s environment or to think abstractly as measured by objective criteria; the ability to perform computer functions.</skos:definition>
 	<skos:prefLabel>intelligence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3886,7 +3886,7 @@
 	<dc:Title>manipulation</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 11:58:16</dc:Date>
-	<skos:definition>to treat or operate with or as if with the hands or by mechanical means especially in a skillful manner; to manage or utilize skillfully; to control or play upon by artful, unfair, or insidious means especially to one&#39;s own advantage; to change by artful or unfair means so as to serve one&#39;s purpose.</skos:definition>
+	<skos:definition>to treat or operate with or as if with the hands or by mechanical means especially in a skillful manner; to manage or utilize skillfully; to control or play upon by artful, unfair, or insidious means especially to oneand#39;s own advantage; to change by artful or unfair means so as to serve oneand#39;s purpose.</skos:definition>
 	<skos:prefLabel>manipulation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -3912,7 +3912,7 @@
 	<dc:Title>task set</dc:Title>
 	<dc:Contributor>Mei-Yen Chen</dc:Contributor>
 	<dc:Date>2011-08-12 13:09:15</dc:Date>
-	<skos:definition>The set of rules and/or stimulus-response mappings that define how a task should be performed.</skos:definition>
+	<skos:definition>The set of rules and-or stimulus-response mappings that define how a task should be performed.</skos:definition>
 	<skos:prefLabel>task set</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -4016,7 +4016,7 @@
 	<dc:Title>learning</dc:Title>
 	<dc:Contributor>Tom Schonberg</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:32</dc:Date>
-	<skos:definition>The process of acquiring new skills/knowledge/information </skos:definition>
+	<skos:definition>The process of acquiring new skills-knowledge-information </skos:definition>
 	<skos:prefLabel>learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -4575,7 +4575,7 @@
 	<dc:Title>cueing</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2010-04-29 13:10:21</dc:Date>
-	<skos:definition>to give/present a stimulus that prompts a reaction.</skos:definition>
+	<skos:definition>to give-present a stimulus that prompts a reaction.</skos:definition>
 	<skos:prefLabel>cueing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -5271,7 +5271,7 @@
 	<dc:Title>figure ground relations</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-12 13:01:08</dc:Date>
-	<skos:definition>refers to a cognitive ability to separate elements based upon contrast, that is, dark and light, black and white. Many times this definition is expanded from a simple perception based on contrast to include abstract (i.e. non-visual) concepts such as melody/harmony, subject/background and positive/negative space.  The famous optical illusion image depicting both a vase and two profiles of a human face (the Rubin vase) is often used to illustrate the concept of figure ground: Depending on whether the white or black color is seen as the figure (forefront) or the ground (background) the brain will interpret the picture as two different images, and it may be difficult (or even, according to gestalt psychological theory, impossible) to perceive both meaningful images simultaneously.</skos:definition>
+	<skos:definition>refers to a cognitive ability to separate elements based upon contrast, that is, dark and light, black and white. Many times this definition is expanded from a simple perception based on contrast to include abstract (i.e. non-visual) concepts such as melody-harmony, subject-background and positive-negative space.  The famous optical illusion image depicting both a vase and two profiles of a human face (the Rubin vase) is often used to illustrate the concept of figure ground: Depending on whether the white or black color is seen as the figure (forefront) or the ground (background) the brain will interpret the picture as two different images, and it may be difficult (or even, according to gestalt psychological theory, impossible) to perceive both meaningful images simultaneously.</skos:definition>
 	<skos:prefLabel>figure ground relations</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -5534,7 +5534,7 @@
 	<dc:Title>multisensory</dc:Title>
 	<dc:Contributor>Scott Love</dc:Contributor>
 	<dc:Date>2011-07-28 14:25:14</dc:Date>
-	<skos:definition>Describes any neural or behavioral process associated with multiple sensory modalities (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8)</skos:definition>
+	<skos:definition>Describes any neural or behavioral process associated with multiple sensory modalities (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8)</skos:definition>
 	<skos:prefLabel>multisensory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -5665,7 +5665,7 @@
 	<dc:Title>insight</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>In problem solving, the moment at which an underlying relation between cause and effect is discovered/identified.</skos:definition>
+	<skos:definition>In problem solving, the moment at which an underlying relation between cause and effect is discovered-identified.</skos:definition>
 	<skos:prefLabel>insight</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -5942,7 +5942,7 @@
 	<dc:Title>multisensory process</dc:Title>
 	<dc:Contributor>Scott Love</dc:Contributor>
 	<dc:Date>2011-07-28 14:33:59</dc:Date>
-	<skos:definition>A general descriptor of any multisensory phenomenon, e.g., multisensory integration and cross-modal matching (from, Stein BE et al., Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8)</skos:definition>
+	<skos:definition>A general descriptor of any multisensory phenomenon, e.g., multisensory integration and cross-modal matching (from, Stein BE et al., Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8)</skos:definition>
 	<skos:prefLabel>multisensory process</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6007,7 +6007,7 @@
 	<dc:Title>concept</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-28 17:19:59</dc:Date>
-	<skos:definition>a cognitive unit of meaning—an abstract  idea or a mental symbol  sometimes defined as a &#34;unit of knowledge,&#34; built from other units which act as a concept&#39;s characteristics.</skos:definition>
+	<skos:definition>a cognitive unit of meaning—an abstract  idea or a mental symbol  sometimes defined as a and#34;unit of knowledge,and#34; built from other units which act as a conceptand#39;s characteristics.</skos:definition>
 	<skos:prefLabel>concept</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6020,7 +6020,7 @@
 	<dc:Title>semantic memory</dc:Title>
 	<dc:Contributor>Joseph Devlin</dc:Contributor>
 	<dc:Date>2010-05-09 00:46:27</dc:Date>
-	<skos:definition>refers to one&#39;s conceptual knowledge and includes the meanings of words, factual information about the world, and other information not related to specific events or episodes</skos:definition>
+	<skos:definition>refers to oneand#39;s conceptual knowledge and includes the meanings of words, factual information about the world, and other information not related to specific events or episodes</skos:definition>
 	<skos:prefLabel>semantic memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -6081,7 +6081,7 @@
 	<dc:Title>conceptual metaphor</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-01 12:33:23</dc:Date>
-	<skos:definition>In cognitive linguistics, metaphor is defined as understanding one conceptual domain in terms of another conceptual domain; for example, using one person&#39;s life experience to understand a different person&#39;s experience. A conceptual domain can be any coherent organization of experience.  </skos:definition>
+	<skos:definition>In cognitive linguistics, metaphor is defined as understanding one conceptual domain in terms of another conceptual domain; for example, using one personand#39;s life experience to understand a different personand#39;s experience. A conceptual domain can be any coherent organization of experience.  </skos:definition>
 	<skos:prefLabel>conceptual metaphor</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6094,7 +6094,7 @@
 	<dc:Title>episodic buffer</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:33</dc:Date>
-	<skos:definition>A theoretical construct that is part of Alan Baddeley&#39;s working memory model and the object of which is to integrate information across sensory domains and communicate with long term memory in the service of working memory. </skos:definition>
+	<skos:definition>A theoretical construct that is part of Alan Baddeleyand#39;s working memory model and the object of which is to integrate information across sensory domains and communicate with long term memory in the service of working memory. </skos:definition>
 	<skos:prefLabel>episodic buffer</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6120,7 +6120,7 @@
 	<dc:Title>Central Coherence</dc:Title>
 	<dc:Contributor>Deanna Lau</dc:Contributor>
 	<dc:Date>2010-02-22 10:05:08</dc:Date>
-	<skos:definition>A person&#39;s ability to understand things in context</skos:definition>
+	<skos:definition>A personand#39;s ability to understand things in context</skos:definition>
 	<skos:prefLabel>Central Coherence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6212,7 +6212,7 @@
 	<dc:Title>source memory</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 12:12:49</dc:Date>
-	<skos:definition>the episodic source from which a specific item was acquired (e.g., from a person, a book, or television (Schacter, Kaszniak, Kihlstrom, &amp; Valdiserri, 1991, p. 559).</skos:definition>
+	<skos:definition>the episodic source from which a specific item was acquired (e.g., from a person, a book, or television (Schacter, Kaszniak, Kihlstrom, andamp; Valdiserri, 1991, p. 559).</skos:definition>
 	<skos:prefLabel>source memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6251,7 +6251,7 @@
 	<dc:Title>emotion</dc:Title>
 	<dc:Contributor>Tyler Davis</dc:Contributor>
 	<dc:Date>2011-08-14 15:56:34</dc:Date>
-	<skos:definition>a complex of psychological phenomena that involve some degree of arousal and valence (positive/negative)</skos:definition>
+	<skos:definition>a complex of psychological phenomena that involve some degree of arousal and valence (positive-negative)</skos:definition>
 	<skos:prefLabel>emotion</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6438,7 +6438,7 @@
 	<dc:Title>elaborative processing</dc:Title>
 	<dc:Contributor>Tyler Davis</dc:Contributor>
 	<dc:Date>2011-08-14 15:54:00</dc:Date>
-	<skos:definition>Processing in which semantic associations or relations between words/concepts are generated or elaborated on.</skos:definition>
+	<skos:definition>Processing in which semantic associations or relations between words-concepts are generated or elaborated on.</skos:definition>
 	<skos:prefLabel>elaborative processing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6496,7 +6496,7 @@
 	<dc:Title>explicit learning</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>Acquisition of skills and/or knowledge actively and with awareness. Typically such learning is accompanied by meta-awareness - individuals can explain how they acquired the skill/knowledge.</skos:definition>
+	<skos:definition>Acquisition of skills and-or knowledge actively and with awareness. Typically such learning is accompanied by meta-awareness - individuals can explain how they acquired the skill-knowledge.</skos:definition>
 	<skos:prefLabel>explicit learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6535,7 +6535,7 @@
 	<dc:Title>fluid intelligence</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-18 12:21:28</dc:Date>
-	<skos:definition>a factor of general intelligence originally identified by Raymond Cattell; Cattell defined fluid intelligence as &#34;…the ability to perceive relationships independent of previous specific practice or instruction concerning those relationships.&#34; Fluid intelligence is the ability to think and reason abstractly and solve problems. This ability is considered independent of learning, experience, and education.</skos:definition>
+	<skos:definition>a factor of general intelligence originally identified by Raymond Cattell; Cattell defined fluid intelligence as and#34;…the ability to perceive relationships independent of previous specific practice or instruction concerning those relationships.and#34; Fluid intelligence is the ability to think and reason abstractly and solve problems. This ability is considered independent of learning, experience, and education.</skos:definition>
 	<skos:prefLabel>fluid intelligence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6607,7 +6607,7 @@
 	<dc:Title>humiliation</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-28 17:27:12</dc:Date>
-	<skos:definition>to reduce to a lower position in one&#39;s own eyes or others&#39; eyes.</skos:definition>
+	<skos:definition>to reduce to a lower position in oneand#39;s own eyes or othersand#39; eyes.</skos:definition>
 	<skos:prefLabel>humiliation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6620,7 +6620,7 @@
 	<dc:Title>heuristic search</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-05-20 12:26:14</dc:Date>
-	<skos:definition>refers to experience-based techniques for problem solving, learning, and discovery. Heuristic methods are used to speed up the process of finding a good enough solution, where an exhaustive search is impractical. Examples of this method include using a &#34;rule of thumb&#34;, an educated guess, an intuitive judgment, or common sense.  In more precise terms, heuristics are strategies using readily accessible, though loosely applicable, information to control problem solving in human beings and machines</skos:definition>
+	<skos:definition>refers to experience-based techniques for problem solving, learning, and discovery. Heuristic methods are used to speed up the process of finding a good enough solution, where an exhaustive search is impractical. Examples of this method include using a and#34;rule of thumband#34;, an educated guess, an intuitive judgment, or common sense.  In more precise terms, heuristics are strategies using readily accessible, though loosely applicable, information to control problem solving in human beings and machines</skos:definition>
 	<skos:prefLabel>heuristic search</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6977,7 +6977,7 @@
 	<dc:Title>integration</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-04 11:05:45</dc:Date>
-	<skos:definition>the act or process or an instance of integrating; coordination of mental processes into a normal effective personality or with the individual&#39;s environment; the operation of finding a function whose differential is known.</skos:definition>
+	<skos:definition>the act or process or an instance of integrating; coordination of mental processes into a normal effective personality or with the individualand#39;s environment; the operation of finding a function whose differential is known.</skos:definition>
 	<skos:prefLabel>integration</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -6990,7 +6990,7 @@
 	<dc:Title>selective attention</dc:Title>
 	<dc:Contributor>Akram Bakkour</dc:Contributor>
 	<dc:Date>2011-08-17 09:56:16</dc:Date>
-	<skos:definition>When multiple external sensory inputs are present, the process of dedicating cognitive and perceptual resources to one type/set of input and attenuating receptiveness to other inputs.</skos:definition>
+	<skos:definition>When multiple external sensory inputs are present, the process of dedicating cognitive and perceptual resources to one type-set of input and attenuating receptiveness to other inputs.</skos:definition>
 	<skos:prefLabel>selective attention</skos:prefLabel>
 	<skos:altLabel>controlled attention, directed attention</skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -7068,7 +7068,7 @@
 	<dc:Title>navigation</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:32</dc:Date>
-	<skos:definition>The process of controlling the movement of a body/entity/vehicle through space from one point to another.</skos:definition>
+	<skos:definition>The process of controlling the movement of a body-entity-vehicle through space from one point to another.</skos:definition>
 	<skos:prefLabel>navigation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -7387,7 +7387,7 @@
 	<dc:Title>creative cognition</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-11 15:16:37</dc:Date>
-	<skos:definition>involves two types of processes: generative processes and exploratory processes.  Generative processes are those that most of us think about when we think of creativity. They are the processes by which creative concepts are first born. These processes are highly visible in extreme acts of creativity, but they are also evident in ordinary, everyday cognition.  Examples (from Ward et al.(cited below)) include memory retrieval, association formation among information retrieved from memory, combinations of structures retrieved from memory, the synthesis of new structures, the transformation of retrieved structures into &#34;new forms,&#34; analogical transfer between domains, and &#34;categorical reduction,&#34; which involves reducing existing structures to &#34;more primitive constituents&#34;.  Exploratory processes are the processes used to explore the structures produced by generative processes. Examples of exploratory processes (given by Ward, et al.) include searching retrieved structures for &#34;novel attributes,&#34; searching for &#34;metaphorical implications,&#34; searching for possible functions, &#34;the evaluation of structures from different perspectives or within different contexts,&#34; interpretation of structures from the perspective of the problem(s) to be solved, and &#34;the search for various practical or conceptual limitations that are suggested by the structures.&#34; </skos:definition>
+	<skos:definition>involves two types of processes: generative processes and exploratory processes.  Generative processes are those that most of us think about when we think of creativity. They are the processes by which creative concepts are first born. These processes are highly visible in extreme acts of creativity, but they are also evident in ordinary, everyday cognition.  Examples (from Ward et al.(cited below)) include memory retrieval, association formation among information retrieved from memory, combinations of structures retrieved from memory, the synthesis of new structures, the transformation of retrieved structures into and#34;new forms,and#34; analogical transfer between domains, and and#34;categorical reduction,and#34; which involves reducing existing structures to and#34;more primitive constituentsand#34;.  Exploratory processes are the processes used to explore the structures produced by generative processes. Examples of exploratory processes (given by Ward, et al.) include searching retrieved structures for and#34;novel attributes,and#34; searching for and#34;metaphorical implications,and#34; searching for possible functions, and#34;the evaluation of structures from different perspectives or within different contexts,and#34; interpretation of structures from the perspective of the problem(s) to be solved, and and#34;the search for various practical or conceptual limitations that are suggested by the structures.and#34; </skos:definition>
 	<skos:prefLabel>creative cognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -7634,7 +7634,7 @@
 	<dc:Title>auditory localization</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-03 13:52:23</dc:Date>
-	<skos:definition>a listener&#39;s ability to identify the location or origin of a detected sound.</skos:definition>
+	<skos:definition>a listenerand#39;s ability to identify the location or origin of a detected sound.</skos:definition>
 	<skos:prefLabel>auditory localization</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -7660,7 +7660,7 @@
 	<dc:Title>central executive</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:33</dc:Date>
-	<skos:definition>The core mental process of working memory that allows for information that is stored in short-term memory to be actively manipulated (e.g., mental arithmetic). The term &#39;central executive&#39; is typically associated with psychologist Alan Baddeley&#39;s &#34;Model of Working Memory&#34;.</skos:definition>
+	<skos:definition>The core mental process of working memory that allows for information that is stored in short-term memory to be actively manipulated (e.g., mental arithmetic). The term and#39;central executiveand#39; is typically associated with psychologist Alan Baddeleyand#39;s and#34;Model of Working Memoryand#34;.</skos:definition>
 	<skos:prefLabel>central executive</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -7768,7 +7768,7 @@
 	<dc:Title>emotional intelligence</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-18 14:26:24</dc:Date>
-	<skos:definition>the capacity, skill or ability to identify, assess, and manage the emotions of one&#39;s self, of others, and of groups.</skos:definition>
+	<skos:definition>the capacity, skill or ability to identify, assess, and manage the emotions of oneand#39;s self, of others, and of groups.</skos:definition>
 	<skos:prefLabel>emotional intelligence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8045,7 +8045,7 @@
 	<dc:Title>self monitoring</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-29 11:04:32</dc:Date>
-	<skos:definition>measurement of one&#39;s own behavior.</skos:definition>
+	<skos:definition>measurement of oneand#39;s own behavior.</skos:definition>
 	<skos:prefLabel>self monitoring</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -8136,7 +8136,7 @@
 	<dc:Title>word repetition</dc:Title>
 	<dc:Contributor>Mei-Yen Chen</dc:Contributor>
 	<dc:Date>2011-08-12 13:58:32</dc:Date>
-	<skos:definition>is the saying by one individual of the spoken vocalizations(word(s)) made by another individual. This requires the ability in the person making the copy to map the sensory input they hear from the other person&#39;s vocal pronunciation into a similar motor output with their own vocal tract.</skos:definition>
+	<skos:definition>is the saying by one individual of the spoken vocalizations(word(s)) made by another individual. This requires the ability in the person making the copy to map the sensory input they hear from the other personand#39;s vocal pronunciation into a similar motor output with their own vocal tract.</skos:definition>
 	<skos:prefLabel>word repetition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8271,7 +8271,7 @@
 	<dc:Title>figure ground reversal</dc:Title>
 	<dc:Contributor>Tyler Davis</dc:Contributor>
 	<dc:Date>2011-08-14 17:11:06</dc:Date>
-	<skos:definition>Occurs in certain visual illusions (e.g., Vases and Faces or &#34;Rubin&#39;s Vase&#34;) in which there are multiple valid figure-ground segmentations that can be selected depending on an observer&#39;s interpretation.</skos:definition>
+	<skos:definition>Occurs in certain visual illusions (e.g., Vases and Faces or and#34;Rubinand#39;s Vaseand#34;) in which there are multiple valid figure-ground segmentations that can be selected depending on an observerand#39;s interpretation.</skos:definition>
 	<skos:prefLabel>figure ground reversal</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8474,7 +8474,7 @@
 	<dc:Title>excitation</dc:Title>
 	<dc:Contributor>Tyler Davis</dc:Contributor>
 	<dc:Date>2011-08-14 16:39:28</dc:Date>
-	<skos:definition>(emotion) an increase in one&#39;s state of arousal. (neuroscience) A state of increased activity due to stimulation.</skos:definition>
+	<skos:definition>(emotion) an increase in oneand#39;s state of arousal. (neuroscience) A state of increased activity due to stimulation.</skos:definition>
 	<skos:prefLabel>excitation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8643,7 +8643,7 @@
 	<dc:Title>binocular convergence</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 12:11:26</dc:Date>
-	<skos:definition>when you look at an object that is closer than approximately 25 feet, your eyes must converge on the object to perceive it as a single object clearly in focus.&#34; </skos:definition>
+	<skos:definition>when you look at an object that is closer than approximately 25 feet, your eyes must converge on the object to perceive it as a single object clearly in focus.and#34; </skos:definition>
 	<skos:prefLabel>binocular convergence</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8656,7 +8656,7 @@
 	<dc:Title>mental rotation</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:32</dc:Date>
-	<skos:definition>Ability to rotate an object in one&#39;s mind; ability to make perceptual judgments on a new spatial configuration of an object.</skos:definition>
+	<skos:definition>Ability to rotate an object in oneand#39;s mind; ability to make perceptual judgments on a new spatial configuration of an object.</skos:definition>
 	<skos:prefLabel>mental rotation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -8695,7 +8695,7 @@
 	<dc:Title>crosstalk</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 13:53:22</dc:Date>
-	<skos:definition>biology:  the phenomenon that signal components in signal transduction can be shared between different signal pathways and responses to a signal inducing condition (e.g., stress) can activate multiple responses in the cell/the organism. (from Wikipedia) electronics:  any phenomenon by which a signal transmitted on one circuit or channel of a transmission system creates an undesired effect in another circuit or channel, (usually caused by undesired capacitive, inductive, or conductive coupling from one circuit, part of a circuit, or channel, to another).</skos:definition>
+	<skos:definition>biology:  the phenomenon that signal components in signal transduction can be shared between different signal pathways and responses to a signal inducing condition (e.g., stress) can activate multiple responses in the cell-the organism. (from Wikipedia) electronics:  any phenomenon by which a signal transmitted on one circuit or channel of a transmission system creates an undesired effect in another circuit or channel, (usually caused by undesired capacitive, inductive, or conductive coupling from one circuit, part of a circuit, or channel, to another).</skos:definition>
 	<skos:prefLabel>crosstalk</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -9172,7 +9172,7 @@
 	<dc:Title>illocutionary force</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-03 13:54:15</dc:Date>
-	<skos:definition>a speaker&#39;s intention in delivering an utterance.</skos:definition>
+	<skos:definition>a speakerand#39;s intention in delivering an utterance.</skos:definition>
 	<skos:prefLabel>illocutionary force</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -9237,7 +9237,7 @@
 	<dc:Title>anchoring</dc:Title>
 	<dc:Contributor>Russ Poldrack</dc:Contributor>
 	<dc:Date>2011-04-09 08:03:06</dc:Date>
-	<skos:definition>a cognitive bias that describes the common human tendency to rely too heavily, or &#34;anchor,&#34; on one trait or piece of information when making decisions.</skos:definition>
+	<skos:definition>a cognitive bias that describes the common human tendency to rely too heavily, or and#34;anchor,and#34; on one trait or piece of information when making decisions.</skos:definition>
 	<skos:prefLabel>anchoring</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -9316,7 +9316,7 @@
 	<dc:Title>declarative knowledge</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>Knowledge that is descriptive and includes knowing &#34;that&#34; rather than knowing &#34;how&#34; (can be expressed in declarative sentences).</skos:definition>
+	<skos:definition>Knowledge that is descriptive and includes knowing and#34;thatand#34; rather than knowing and#34;howand#34; (can be expressed in declarative sentences).</skos:definition>
 	<skos:prefLabel>declarative knowledge</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -9348,7 +9348,7 @@
 	<dc:Title>Sense of ownership</dc:Title>
 	<dc:Contributor>Birgit Nierula</dc:Contributor>
 	<dc:Date>2011-08-29 08:19:12</dc:Date>
-	<skos:definition>The feeling that something is part of one&#39;s own body.</skos:definition>
+	<skos:definition>The feeling that something is part of oneand#39;s own body.</skos:definition>
 	<skos:prefLabel>Sense of ownership</skos:prefLabel>
 	<skos:altLabel>body ownership, </skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;trm_4e5505361f160"/>
@@ -9640,7 +9640,7 @@
 	<dc:Title>discourse knowledge</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-18 11:18:00</dc:Date>
-	<skos:definition>Iara Lessa summarizes Michel Foucault&#39;s definition of discourse as “systems of thoughts composed of ideas, attitudes, courses of action, beliefs and practices that systematically construct the subjects and the worlds of which they speak.&#34; </skos:definition>
+	<skos:definition>Iara Lessa summarizes Michel Foucaultand#39;s definition of discourse as “systems of thoughts composed of ideas, attitudes, courses of action, beliefs and practices that systematically construct the subjects and the worlds of which they speak.and#34; </skos:definition>
 	<skos:prefLabel>discourse knowledge</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10111,7 +10111,7 @@
 	<dc:Title>perceptual categorization</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-07 11:21:36</dc:Date>
-	<skos:definition>A selective system that can have no a priori information about the particular stimuli that might be encountered in its environment, other than boundary conditions implicit in the construction of its recognizing elements. Perceptual categorization, according to this view, does not involve the &#34;reading in&#34; of readily available information about the stimulus category; rather, it involves the utilization of multiple cues in degenerate, overlapping sets and under the influence of context. </skos:definition>
+	<skos:definition>A selective system that can have no a priori information about the particular stimuli that might be encountered in its environment, other than boundary conditions implicit in the construction of its recognizing elements. Perceptual categorization, according to this view, does not involve the and#34;reading inand#34; of readily available information about the stimulus category; rather, it involves the utilization of multiple cues in degenerate, overlapping sets and under the influence of context. </skos:definition>
 	<skos:prefLabel>perceptual categorization</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10250,7 +10250,7 @@
 	<dc:Title>contextual knowledge</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-28 17:25:15</dc:Date>
-	<skos:definition>information, and/or skills that have particular meaning because of the conditions that form part of their description. </skos:definition>
+	<skos:definition>information, and-or skills that have particular meaning because of the conditions that form part of their description. </skos:definition>
 	<skos:prefLabel>contextual knowledge</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10440,7 +10440,7 @@
 	<dc:Title>procedural knowledge</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:32</dc:Date>
-	<skos:definition>Knowledge exercised in the performance of a task/activity. Its acquisition or structure is often unavailable to the actor.</skos:definition>
+	<skos:definition>Knowledge exercised in the performance of a task-activity. Its acquisition or structure is often unavailable to the actor.</skos:definition>
 	<skos:prefLabel>procedural knowledge</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10511,7 +10511,7 @@
 	<dc:Title>metacognition</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 15:50:20</dc:Date>
-	<skos:definition>awareness or analysis of one&#39;s own learning or thinking processes.</skos:definition>
+	<skos:definition>awareness or analysis of oneand#39;s own learning or thinking processes.</skos:definition>
 	<skos:prefLabel>metacognition</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10679,7 +10679,7 @@
 	<dc:Title>metacognitive skill</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-07 11:09:01</dc:Date>
-	<skos:definition>a learners&#39; automatic awareness of their own knowledge and their ability to understand, control, and manipulate their own cognitive processes. </skos:definition>
+	<skos:definition>a learnersand#39; automatic awareness of their own knowledge and their ability to understand, control, and manipulate their own cognitive processes. </skos:definition>
 	<skos:prefLabel>metacognitive skill</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10744,7 +10744,7 @@
 	<dc:Title>concept learning</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-18 10:51:41</dc:Date>
-	<skos:definition>Concept learning, also known as category learning and concept attainment, is largely based on the works of the cognitive psychologist Jerome Bruner. Bruner, Goodnow, &amp; Austin (1967) defined concept attainment (or concept learning) as &#34;the search for and listing of attributes that can be used to distinguish exemplars from non exemplars of various categories.&#34; More simply put, concepts are the mental categories that help us classify objects, events, or ideas and each object, event, or idea has a set of common relevant features. Thus, concept learning is a strategy which requires a learner to compare and contrast groups or categories that contain concept-relevant features with groups or categories that do not contain concept-relevant features. </skos:definition>
+	<skos:definition>Concept learning, also known as category learning and concept attainment, is largely based on the works of the cognitive psychologist Jerome Bruner. Bruner, Goodnow, andamp; Austin (1967) defined concept attainment (or concept learning) as and#34;the search for and listing of attributes that can be used to distinguish exemplars from non exemplars of various categories.and#34; More simply put, concepts are the mental categories that help us classify objects, events, or ideas and each object, event, or idea has a set of common relevant features. Thus, concept learning is a strategy which requires a learner to compare and contrast groups or categories that contain concept-relevant features with groups or categories that do not contain concept-relevant features. </skos:definition>
 	<skos:prefLabel>concept learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10770,7 +10770,7 @@
 	<dc:Title>Self-Regulation</dc:Title>
 	<dc:Contributor>Akram Bakkour</dc:Contributor>
 	<dc:Date>2011-08-12 14:01:56</dc:Date>
-	<skos:definition>the control of one&#39;s own behavior through self-monitoring of the conditions that evoke desired and undesired behavior, structuring the personal environment to facilitate desired behavior and circumvent situations that tend to elicit undesired behavior.</skos:definition>
+	<skos:definition>the control of oneand#39;s own behavior through self-monitoring of the conditions that evoke desired and undesired behavior, structuring the personal environment to facilitate desired behavior and circumvent situations that tend to elicit undesired behavior.</skos:definition>
 	<skos:prefLabel>Self-Regulation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10848,7 +10848,7 @@
 	<dc:Title>introspection</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-29 15:55:50</dc:Date>
-	<skos:definition>the self-observation and reporting of conscious inner thoughts, desires  and sensations. It is a conscious mental and usually purposive process relying on thinking, reasoning, and examining one&#39;s own thoughts, feelings.</skos:definition>
+	<skos:definition>the self-observation and reporting of conscious inner thoughts, desires  and sensations. It is a conscious mental and usually purposive process relying on thinking, reasoning, and examining oneand#39;s own thoughts, feelings.</skos:definition>
 	<skos:prefLabel>introspection</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -10991,7 +10991,7 @@
 	<dc:Title>behavioral inhibition (cognitive)</dc:Title>
 	<dc:Contributor>System Administrator</dc:Contributor>
 	<dc:Date>2010-02-17 09:27:37</dc:Date>
-	<skos:definition>Often used as a synonym of &#34;response inhibition&#34; to describe the inhibition of actions. </skos:definition>
+	<skos:definition>Often used as a synonym of and#34;response inhibitionand#34; to describe the inhibition of actions. </skos:definition>
 	<skos:prefLabel>behavioral inhibition (cognitive)</skos:prefLabel>
 	<skos:altLabel>behavioral inhibition</skos:altLabel>
 	<rdfs:subClassOf>
@@ -11420,7 +11420,7 @@
 	<dc:Title>causal inference</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>The process of defining that one state/object/event determines the occurrence of another state/object/event.</skos:definition>
+	<skos:definition>The process of defining that one state-object-event determines the occurrence of another state-object-event.</skos:definition>
 	<skos:prefLabel>causal inference</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -11524,7 +11524,7 @@
 	<dc:Title>implicit memory</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:31</dc:Date>
-	<skos:definition>Type of memory in which experiences increases performance of task without one&#39;s conscious awareness of these previous experiences. This type of memory applies to habit learning, skills, conditioning.</skos:definition>
+	<skos:definition>Type of memory in which experiences increases performance of task without oneand#39;s conscious awareness of these previous experiences. This type of memory applies to habit learning, skills, conditioning.</skos:definition>
 	<skos:prefLabel>implicit memory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -11781,7 +11781,7 @@
 	<dc:Title>crossmodal</dc:Title>
 	<dc:Contributor>Scott Love</dc:Contributor>
 	<dc:Date>2011-08-04 21:26:13</dc:Date>
-	<skos:definition>Describes a complex of two or more modality-specific [unimodal] stimuli from different sensory modalities (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007/s00221-009-1880-8)</skos:definition>
+	<skos:definition>Describes a complex of two or more modality-specific [unimodal] stimuli from different sensory modalities (from, Stein BE et al., (2009) Experimental brain research 198: 113-26. doi:10.1007-s00221-009-1880-8)</skos:definition>
 	<skos:prefLabel>crossmodal</skos:prefLabel>
 	<skos:altLabel>cross-modal</skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -11794,7 +11794,7 @@
 	<dc:Title>theory of mind</dc:Title>
 	<dc:Contributor>Mei-Yen Chen</dc:Contributor>
 	<dc:Date>2011-08-12 13:08:00</dc:Date>
-	<skos:definition>the ability for a person to connect emotional states to themselves and others and understand that other people may have different  beliefs, desires, or intentions from one&#39;s self.  It is intimately connected with the development of a person&#39;s ability to analyze and interpret the intentions of others.</skos:definition>
+	<skos:definition>the ability for a person to connect emotional states to themselves and others and understand that other people may have different  beliefs, desires, or intentions from oneand#39;s self.  It is intimately connected with the development of a personand#39;s ability to analyze and interpret the intentions of others.</skos:definition>
 	<skos:prefLabel>theory of mind</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -11937,7 +11937,7 @@
 	<dc:Title>spatial ability</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-03 13:54:57</dc:Date>
-	<skos:definition>skill in perceiving the visual world, transforming and modifying initial perceptions, and mentally recreating spatial aspects of one&#39;s visual experience without the relevant stimuli.</skos:definition>
+	<skos:definition>skill in perceiving the visual world, transforming and modifying initial perceptions, and mentally recreating spatial aspects of oneand#39;s visual experience without the relevant stimuli.</skos:definition>
 	<skos:prefLabel>spatial ability</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -12079,7 +12079,7 @@
 	<dc:Title>creative thinking</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 12:17:09</dc:Date>
-	<skos:definition>the intellectually disciplined process of actively and skillfully conceptualizing, applying, analyzing, synthesizing, and/or evaluating information gathered from, or generated by, observation, experience, reflection, reasoning, or communication, as a guide to belief and action (Scriven &amp; Paul, 1992).</skos:definition>
+	<skos:definition>the intellectually disciplined process of actively and skillfully conceptualizing, applying, analyzing, synthesizing, and-or evaluating information gathered from, or generated by, observation, experience, reflection, reasoning, or communication, as a guide to belief and action (Scriven andamp; Paul, 1992).</skos:definition>
 	<skos:prefLabel>creative thinking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -12389,7 +12389,7 @@
 	<dc:Title>sublexical route</dc:Title>
 	<dc:Contributor>Joseph Devlin</dc:Contributor>
 	<dc:Date>2010-05-09 00:33:37</dc:Date>
-	<skos:definition>is a theoretical component of Coltheart&#39;s dual-route reading model that refers to using spelling-to-sound correspondences to convert a written word (i.e. orthography) into a spoken word (i.e. phonology).  In other words, it is the route by which letters are linked to their sounds and the sounds are assembled into a whole word pronunciation.  It complements the lexical route where the whole word is recognized and linked to its sound.</skos:definition>
+	<skos:definition>is a theoretical component of Coltheartand#39;s dual-route reading model that refers to using spelling-to-sound correspondences to convert a written word (i.e. orthography) into a spoken word (i.e. phonology).  In other words, it is the route by which letters are linked to their sounds and the sounds are assembled into a whole word pronunciation.  It complements the lexical route where the whole word is recognized and linked to its sound.</skos:definition>
 	<skos:prefLabel>sublexical route</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -12642,7 +12642,7 @@
 	<dc:Title>critical period</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-05-16 11:59:08</dc:Date>
-	<skos:definition>a limited time in which an event can occur, usually to result in some kind of transformation; in developmental psychology and developmental biology, it is a time in the early stages of an organism&#39;s life during which it displays a heightened sensitivity to certain environmental stimuli, and develops in particular ways due to experiences at this time.</skos:definition>
+	<skos:definition>a limited time in which an event can occur, usually to result in some kind of transformation; in developmental psychology and developmental biology, it is a time in the early stages of an organismand#39;s life during which it displays a heightened sensitivity to certain environmental stimuli, and develops in particular ways due to experiences at this time.</skos:definition>
 	<skos:prefLabel>critical period</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogat;MentalConcept"/>
@@ -12735,12 +12735,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c898b02722d2">
 	<dc:identifier>trm_4c898b02722d2</dc:identifier>
-	<rdfs:label>Counting/Calculation</rdfs:label>
-	<dc:Title>Counting/Calculation</dc:Title>
+	<rdfs:label>Counting-Calculation</rdfs:label>
+	<dc:Title>Counting-Calculation</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:46:15</dc:Date>
 	<skos:definition>Subjects count, add, subtract, multiply, or divide various stimuli (numbers, bars, dots, etc).</skos:definition>
-	<skos:prefLabel>Counting/Calculation</skos:prefLabel>
+	<skos:prefLabel>Counting-Calculation</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
 </owl:Class>
@@ -12916,12 +12916,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a830dec136">
 	<dc:identifier>trm_4c8a830dec136</dc:identifier>
-	<rdfs:label>Recitation/Repetition (Covert)</rdfs:label>
-	<dc:Title>Recitation/Repetition (Covert)</dc:Title>
+	<rdfs:label>Recitation-Repetition (Covert)</rdfs:label>
+	<dc:Title>Recitation-Repetition (Covert)</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:20:07</dc:Date>
 	<skos:definition>Subjects silently repeat or recite phonemes, words, or well-known text (nursery rhymes, Pledge of Allegiance, months of the year, etc.).</skos:definition>
-	<skos:prefLabel>Recitation/Repetition (Covert)</skos:prefLabel>
+	<skos:prefLabel>Recitation-Repetition (Covert)</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -13134,12 +13134,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a84f20dde2">
 	<dc:identifier>trm_4c8a84f20dde2</dc:identifier>
-	<rdfs:label>Visual Distractor/Visual Attention</rdfs:label>
-	<dc:Title>Visual Distractor/Visual Attention</dc:Title>
+	<rdfs:label>Visual Distractor-Visual Attention</rdfs:label>
+	<dc:Title>Visual Distractor-Visual Attention</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:14:54</dc:Date>
 	<skos:definition>This category is a catch-all for visuoattention paradigms.  Examples include:  subjects press a button when a visual target (letters, bars, circles, asterisks, LEDs, etc) appears; subjects detect changes in luminance, shape, or color of visual stimuli; subjects fixate on a central stimuli while ignoring peripheral distractors.  Also includes cued, attention shift, and divided attention paradigms.</skos:definition>
-	<skos:prefLabel>Visual Distractor/Visual Attention</skos:prefLabel>
+	<skos:prefLabel>Visual Distractor-Visual Attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -13308,12 +13308,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a84825c4e4">
 	<dc:identifier>trm_4c8a84825c4e4</dc:identifier>
-	<rdfs:label>Tone Monitor/Discrimination</rdfs:label>
-	<dc:Title>Tone Monitor/Discrimination</dc:Title>
+	<rdfs:label>Tone Monitor-Discrimination</rdfs:label>
+	<dc:Title>Tone Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:16:53</dc:Date>
 	<skos:definition>Subjects are presented with tones and are instructed to listen to them passively (also coded as Passive Listening) or discriminate according to their order, timing, pitch, frequency, or amplitude.</skos:definition>
-	<skos:prefLabel>Tone Monitor/Discrimination</skos:prefLabel>
+	<skos:prefLabel>Tone Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -13327,12 +13327,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8991c5beb0a">
 	<dc:identifier>trm_4c8991c5beb0a</dc:identifier>
-	<rdfs:label>Pain Monitor/Discrimination Task</rdfs:label>
-	<dc:Title>Pain Monitor/Discrimination Task</dc:Title>
+	<rdfs:label>Pain Monitor-Discrimination Task</rdfs:label>
+	<dc:Title>Pain Monitor-Discrimination Task</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:09:14</dc:Date>
 	<skos:definition>Subjects experience thermal or electrical stimulation at a painful threshold.</skos:definition>
-	<skos:prefLabel>Pain Monitor/Discrimination Task</skos:prefLabel>
+	<skos:prefLabel>Pain Monitor-Discrimination Task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -13859,12 +13859,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c898fad429ed">
 	<dc:identifier>trm_4c898fad429ed</dc:identifier>
-	<rdfs:label>Flexion/Extension</rdfs:label>
-	<dc:Title>Flexion/Extension</dc:Title>
+	<rdfs:label>Flexion-Extension</rdfs:label>
+	<dc:Title>Flexion-Extension</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:35:49</dc:Date>
 	<skos:definition>Subjects move (flex and extend) their hands, arms, legs, feet, lips, tongue, etc.</skos:definition>
-	<skos:prefLabel>Flexion/Extension</skos:prefLabel>
+	<skos:prefLabel>Flexion-Extension</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -13882,7 +13882,7 @@
 	<dc:Title>Iowa Gambling Task</dc:Title>
 	<dc:Contributor>Tom Schonberg</dc:Contributor>
 	<dc:Date>2011-02-11 12:25:41</dc:Date>
-	<skos:definition>a widely used experiment in the areas of cognition andamp; emotion that was originally developed to assist in detecting decision-making impairment in patients with prefrontal cortex damage; a computerized experiment that is carried out in real time and resembles real-world contingencies. The task allows participants to select cards from four decks displayed on-screen. Participants are instructed that the selection of each card will result in winning or losing money. The objective is to attempt to win as much money as possible. (from http://iowagamblingtask.com/)  On each trial, participants select a card from one of four decks; two ‘bad’ decks offer a higher reward on most trials but also higher possible loss and lower overall expected value, whereas two ‘good’ decks offer a lower reward on most trials but lower possible loss and higher expected value. Participants learn the nature of the decks through trial-and- error. In some versions of the task, the probabilities are not stationary.</skos:definition>
+	<skos:definition>a widely used experiment in the areas of cognition andamp; emotion that was originally developed to assist in detecting decision-making impairment in patients with prefrontal cortex damage; a computerized experiment that is carried out in real time and resembles real-world contingencies. The task allows participants to select cards from four decks displayed on-screen. Participants are instructed that the selection of each card will result in winning or losing money. The objective is to attempt to win as much money as possible. (from http:--iowagamblingtask.com-)  On each trial, participants select a card from one of four decks; two ‘bad’ decks offer a higher reward on most trials but also higher possible loss and lower overall expected value, whereas two ‘good’ decks offer a lower reward on most trials but lower possible loss and higher expected value. Participants learn the nature of the decks through trial-and- error. In some versions of the task, the probabilities are not stationary.</skos:definition>
 	<skos:prefLabel>Iowa Gambling Task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -13928,12 +13928,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a83f27ac55">
 	<dc:identifier>trm_4c8a83f27ac55</dc:identifier>
-	<rdfs:label>Spatial/Location Discrimination</rdfs:label>
-	<dc:Title>Spatial/Location Discrimination</dc:Title>
+	<rdfs:label>Spatial-Location Discrimination</rdfs:label>
+	<dc:Title>Spatial-Location Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:18:31</dc:Date>
 	<skos:definition>Subjects view shapes or other stimuli (letters, pictures, numbers, or arrows) and discriminate according to their location, orientation, or size.</skos:definition>
-	<skos:prefLabel>Spatial/Location Discrimination</skos:prefLabel>
+	<skos:prefLabel>Spatial-Location Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -14214,7 +14214,7 @@
 	<dc:Title>Behavioral Investment allocation strategy (BIAS)</dc:Title>
 	<dc:Contributor>Tom Schonberg</dc:Contributor>
 	<dc:Date>2011-02-10 20:16:54</dc:Date>
-	<skos:definition>On each trial, participants choose between two stocks (gain/loss gambles, one stochastically dominating the other) and one bond (a sure gain of $1). They must learn through trial-and-error the characteristics of the stocks, which change over blocks of trials. Feedback on payoffs of the forgone options is presented on each trial. </skos:definition>
+	<skos:definition>On each trial, participants choose between two stocks (gain-loss gambles, one stochastically dominating the other) and one bond (a sure gain of $1). They must learn through trial-and-error the characteristics of the stocks, which change over blocks of trials. Feedback on payoffs of the forgone options is presented on each trial. </skos:definition>
 	<skos:prefLabel>Behavioral Investment allocation strategy (BIAS)</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
@@ -14266,7 +14266,7 @@
 	<dc:Title>reading span task</dc:Title>
 	<dc:Contributor>Russ Poldrack</dc:Contributor>
 	<dc:Date>2010-07-16 14:38:48</dc:Date>
-	<skos:definition>A task that requires participants to read series of unconnected sentences aloud and to remember the final word of each sentence of a series (grouped according to the total number of sentences). With each sentence presented on a card, participants were cued to recall the memorized end-of-sentence words in their original order by a blank card at the end of a series. The number of sentences of a series was incrementally increased until a participantand#39;s reading span, or the maximum number of final words correctly recalled, was found. (From http://en.wikipedia.org/wiki/Reading_span_task)</skos:definition>
+	<skos:definition>A task that requires participants to read series of unconnected sentences aloud and to remember the final word of each sentence of a series (grouped according to the total number of sentences). With each sentence presented on a card, participants were cued to recall the memorized end-of-sentence words in their original order by a blank card at the end of a series. The number of sentences of a series was incrementally increased until a participantand#39;s reading span, or the maximum number of final words correctly recalled, was found. (From http:--en.wikipedia.org-wiki-Reading-span-task)</skos:definition>
 	<skos:prefLabel>reading span task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -14306,12 +14306,12 @@
 
 <owl:Class rdf:about="&cogat;tsk_4a57abb949ef7">
 	<dc:identifier>tsk_4a57abb949ef7</dc:identifier>
-	<rdfs:label>Warrington's Face/Word Recognition Test</rdfs:label>
-	<dc:Title>Warrington's Face/Word Recognition Test</dc:Title>
+	<rdfs:label>Warrington's Face-Word Recognition Test</rdfs:label>
+	<dc:Title>Warrington's Face-Word Recognition Test</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-06-21 14:33:13</dc:Date>
 	<skos:definition>Also called the Warrington Recognition Memory Test (RMT), and#34;the RMT consists of the presentation of 50 printed words at the rate of one word every 3 s, and for each word the subject is required to judge the presented stimulus as and#34;pleasantand#34; or and#34;unpleasantand#34; to help ensure that they are attending to the stimulus items. The patient is then presented with a series of word pairs, and the task is to identify which of the two words came from the target list. A series of 50 faces is then presented at the same rate, and the patient is asked to provide the same pleasant versus unpleasant judgments; the patient is then presented with a series of 50 pairs of faces, and the task is again to identify which of the two faces came from the target list.and#34; - (Hermann, Connell, Barr, andamp; Wyler 1995)</skos:definition>
-	<skos:prefLabel>Warrington's Face/Word Recognition Test</skos:prefLabel>
+	<skos:prefLabel>Warrington's Face-Word Recognition Test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -14599,7 +14599,7 @@
 	<dc:Title>Rivermead Behavioural Memory Test</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-15 11:03:07</dc:Date>
-	<skos:definition>comprises a number of subtests focused on providing objective measures of everyday memory performance in people with observed and/or reported memory difficulties.</skos:definition>
+	<skos:definition>comprises a number of subtests focused on providing objective measures of everyday memory performance in people with observed and-or reported memory difficulties.</skos:definition>
 	<skos:prefLabel>Rivermead Behavioural Memory Test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
@@ -14732,12 +14732,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4da63146f12d7">
 	<dc:identifier>trm_4da63146f12d7</dc:identifier>
-	<rdfs:label>remember/know task</rdfs:label>
-	<dc:Title>remember/know task</dc:Title>
+	<rdfs:label>remember-know task</rdfs:label>
+	<dc:Title>remember-know task</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-13 16:27:02</dc:Date>
 	<skos:definition>No definition submitted yet.</skos:definition>
-	<skos:prefLabel>remember/know task</skos:prefLabel>
+	<skos:prefLabel>remember-know task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
 </owl:Class>
@@ -14745,12 +14745,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c89924414c69">
 	<dc:identifier>trm_4c89924414c69</dc:identifier>
-	<rdfs:label>Pitch Monitor/Discrimination</rdfs:label>
-	<dc:Title>Pitch Monitor/Discrimination</dc:Title>
+	<rdfs:label>Pitch Monitor-Discrimination</rdfs:label>
+	<dc:Title>Pitch Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:04:13</dc:Date>
-	<skos:definition>Subjects are presented with various stimuli (human speech and non-speech vocalizations, animal vocalization, mechanical noise, etc.) and are instructed to listen to them passively (also co-coded with Passive Listening), or discriminate based on pitch (pleasant/unpleasant, same/different, duration, familiar/unfamiliar, male/female).</skos:definition>
-	<skos:prefLabel>Pitch Monitor/Discrimination</skos:prefLabel>
+	<skos:definition>Subjects are presented with various stimuli (human speech and non-speech vocalizations, animal vocalization, mechanical noise, etc.) and are instructed to listen to them passively (also co-coded with Passive Listening), or discriminate based on pitch (pleasant-unpleasant, same-different, duration, familiar-unfamiliar, male-female).</skos:definition>
+	<skos:prefLabel>Pitch Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -14764,12 +14764,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c898a8fd3afb">
 	<dc:identifier>trm_4c898a8fd3afb</dc:identifier>
-	<rdfs:label>Chewing/Swallowing</rdfs:label>
-	<dc:Title>Chewing/Swallowing</dc:Title>
+	<rdfs:label>Chewing-Swallowing</rdfs:label>
+	<dc:Title>Chewing-Swallowing</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:50:29</dc:Date>
-	<skos:definition>Subjects chew an oral stimulus that is not food (e.g., gum) or swallow their own saliva.  If the oral stimulus is food or liquid that is swallowed, then the correct paradigm class is Eating/Drinking.</skos:definition>
-	<skos:prefLabel>Chewing/Swallowing</skos:prefLabel>
+	<skos:definition>Subjects chew an oral stimulus that is not food (e.g., gum) or swallow their own saliva.  If the oral stimulus is food or liquid that is swallowed, then the correct paradigm class is Eating-Drinking.</skos:definition>
+	<skos:prefLabel>Chewing-Swallowing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -15038,7 +15038,7 @@
 	<dc:Title>operation span task</dc:Title>
 	<dc:Contributor>Russ Poldrack</dc:Contributor>
 	<dc:Date>2010-07-16 14:37:16</dc:Date>
-	<skos:definition>A task in which subjects are asked to perform a simple mathematical verification (e.g., 4/2 +1 = 3) and then read a word, with a recall test following some number of those verify/read pairs.  The maximum number of words that can be recalled is the and#34;operation spanand#34;.</skos:definition>
+	<skos:definition>A task in which subjects are asked to perform a simple mathematical verification (e.g., 4-2 +1 = 3) and then read a word, with a recall test following some number of those verify-read pairs.  The maximum number of words that can be recalled is the and#34;operation spanand#34;.</skos:definition>
 	<skos:prefLabel>operation span task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -15165,12 +15165,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a83cac75f5">
 	<dc:identifier>trm_4c8a83cac75f5</dc:identifier>
-	<rdfs:label>Sequence Recall/Learning</rdfs:label>
-	<dc:Title>Sequence Recall/Learning</dc:Title>
+	<rdfs:label>Sequence Recall-Learning</rdfs:label>
+	<dc:Title>Sequence Recall-Learning</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:18:50</dc:Date>
-	<skos:definition>Subjects learn and/or perform a complex sequence of finger tapping, button pressing, pointing/clicking, or various other motor responses.</skos:definition>
-	<skos:prefLabel>Sequence Recall/Learning</skos:prefLabel>
+	<skos:definition>Subjects learn and-or perform a complex sequence of finger tapping, button pressing, pointing-clicking, or various other motor responses.</skos:definition>
+	<skos:prefLabel>Sequence Recall-Learning</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -15475,7 +15475,7 @@
 	<dc:Title>Action imitation task</dc:Title>
 	<dc:Contributor>Antonia Hamilton</dc:Contributor>
 	<dc:Date>2010-04-27 08:37:35</dc:Date>
-	<skos:definition>A task in which a participant sees another person perform an action and later performs the same action him/herself.  Imitation can be immediate or delayed.  It can be instructed or elicited implicitly (without the participantand#39;s conscious awareness).  The actions imitated can be familar/meaningful actions or unfamilar/meaningless actions.</skos:definition>
+	<skos:definition>A task in which a participant sees another person perform an action and later performs the same action him-herself.  Imitation can be immediate or delayed.  It can be instructed or elicited implicitly (without the participantand#39;s conscious awareness).  The actions imitated can be familar-meaningful actions or unfamilar-meaningless actions.</skos:definition>
 	<skos:prefLabel>Action imitation task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -15799,12 +15799,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a843d8d352">
 	<dc:identifier>trm_4c8a843d8d352</dc:identifier>
-	<rdfs:label>Tactile Monitor/Discrimination</rdfs:label>
-	<dc:Title>Tactile Monitor/Discrimination</dc:Title>
+	<rdfs:label>Tactile Monitor-Discrimination</rdfs:label>
+	<dc:Title>Tactile Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:17:27</dc:Date>
-	<skos:definition>Subjects experience tactile/somatosensory stimulation and are asked to attend passively or discriminate according to some feature (shape, texture, same/different, frequency of presentation,  etc.)  Also includes: subjects are presented with 3-dimensional objects and are asked to manipulate them in their hands and probe their features.</skos:definition>
-	<skos:prefLabel>Tactile Monitor/Discrimination</skos:prefLabel>
+	<skos:definition>Subjects experience tactile-somatosensory stimulation and are asked to attend passively or discriminate according to some feature (shape, texture, same-different, frequency of presentation,  etc.)  Also includes: subjects are presented with 3-dimensional objects and are asked to manipulate them in their hands and probe their features.</skos:definition>
+	<skos:prefLabel>Tactile Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -15916,12 +15916,12 @@
 
 <owl:Class rdf:about="&cogat;tsk_4a57abb949de3">
 	<dc:identifier>tsk_4a57abb949de3</dc:identifier>
-	<rdfs:label>Span/Supra-Span Test</rdfs:label>
-	<dc:Title>Span/Supra-Span Test</dc:Title>
+	<rdfs:label>Span-Supra-Span Test</rdfs:label>
+	<dc:Title>Span-Supra-Span Test</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-06-27 14:39:10</dc:Date>
 	<skos:definition>Participants are given sequences to recall that exceed their working memory span, usually by about 2 items, however the sequence contains a smaller repeating sequence(s) among the non-repeating items.</skos:definition>
-	<skos:prefLabel>Span/Supra-Span Test</skos:prefLabel>
+	<skos:prefLabel>Span-Supra-Span Test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -16008,7 +16008,7 @@
 	<dc:Title>Subjective Emotional Picture Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:18:08</dc:Date>
-	<skos:definition>Subjects view pictures and are instructed to respond to emotional pictures, to indicate which pictures are pleasant/unpleasant or funny/not funny, or rate the valence of emotional pictures.</skos:definition>
+	<skos:definition>Subjects view pictures and are instructed to respond to emotional pictures, to indicate which pictures are pleasant-unpleasant or funny-not funny, or rate the valence of emotional pictures.</skos:definition>
 	<skos:prefLabel>Subjective Emotional Picture Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -16325,7 +16325,7 @@
 	<dc:Title>recognition memory test</dc:Title>
 	<dc:Contributor>Dan Dillon</dc:Contributor>
 	<dc:Date>2010-04-21 11:00:13</dc:Date>
-	<skos:definition>In a recognition memory test, a participant is presented with some or all of a set of and#34;oldand#34; stimuli that were encoded earlier, as well as several and#34;newand#34; stimuli that were not previously presented. The participantand#39;s task is to indicate whether each stimulus is old or new. Responses in recognition memory tests are commonly sorted into four classes: Hits (and#34;oldand#34; response to an old stimulus), Misses (and#34;newand#34; response to an old stimulus), False Alarms (and#34;oldand#34; response to a new stimulus), and Correct Rejections (and#34;newand#34; response to a new stimulus). By comparing the percentage of responses that fall into each of these classes, the experimenter can assess both a participantand#39;s ability to discriminate between old and new stimuli, and his or her tendency to provide a particular response regardless of the type of stimulus presented. In many recognition memory tests, each old/new judgment is followed by a prompt asking participants to indicate either how confident they are in that old/new judgment, or what type of subjective experience was elicited by the stimulus being judged (e.g., was the old/new judgment accompanied by a vivid recollection of the encoding experience). This additional information can be used to generate and test more precise hypotheses about how recognition memory decisions are made.</skos:definition>
+	<skos:definition>In a recognition memory test, a participant is presented with some or all of a set of and#34;oldand#34; stimuli that were encoded earlier, as well as several and#34;newand#34; stimuli that were not previously presented. The participantand#39;s task is to indicate whether each stimulus is old or new. Responses in recognition memory tests are commonly sorted into four classes: Hits (and#34;oldand#34; response to an old stimulus), Misses (and#34;newand#34; response to an old stimulus), False Alarms (and#34;oldand#34; response to a new stimulus), and Correct Rejections (and#34;newand#34; response to a new stimulus). By comparing the percentage of responses that fall into each of these classes, the experimenter can assess both a participantand#39;s ability to discriminate between old and new stimuli, and his or her tendency to provide a particular response regardless of the type of stimulus presented. In many recognition memory tests, each old-new judgment is followed by a prompt asking participants to indicate either how confident they are in that old-new judgment, or what type of subjective experience was elicited by the stimulus being judged (e.g., was the old-new judgment accompanied by a vivid recollection of the encoding experience). This additional information can be used to generate and test more precise hypotheses about how recognition memory decisions are made.</skos:definition>
 	<skos:prefLabel>recognition memory test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -16376,7 +16376,7 @@
 	<dc:Title>attentional blink task</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-05-31 14:27:57</dc:Date>
-	<skos:definition>attentional processing of a first stimulus interferes with and/or delays the allocation of attention to a second stimulus if the second is presented before the processing of the first has been completed.</skos:definition>
+	<skos:definition>attentional processing of a first stimulus interferes with and-or delays the allocation of attention to a second stimulus if the second is presented before the processing of the first has been completed.</skos:definition>
 	<skos:prefLabel>attentional blink task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -16463,7 +16463,7 @@
 	<dc:Title>MicroCog</dc:Title>
 	<dc:Contributor>Nolan Nichols</dc:Contributor>
 	<dc:Date>2010-03-08 13:14:26</dc:Date>
-	<skos:definition>Overview  The first automated neuropsychological battery developed for clinical practice-fast, reliable, extremely efficient  Target specific concerns of cognitive impairment in adults with the updated MicroCog™: Assessment of Cognitive Functioning Windows® Edition (MicroCog™ for Windows®). This version includes significant enhancements and is optimized for Windows®.  Content This computer administered battery tests individuals with 18 subtests that contribute to summary scores for nine interrelated cognitive areas: • Attention/Mental Control • Memory • Spatial Processing • Reasoning/Calculation • Reaction Time • Information Processing Accuracy • Information Processing Speed • Cognitive Functioning • Cognitive Proficiency  Efficient Screener or Diagnostic Instrument • Flexible-allows you to choose which subtests to administer • Provides differential diagnosis across a wide population  Two Forms • Standard Form (60 to 90 minutes) • Short Form (30 to 45 minutes)  User Friendly Most examinees can complete the test quickly and with minimal assistance after a brief orientation by a testing assistant.  Test-Retest, Store Data MicroCog for Windows® stores test data and is proven effective in testretest situations to monitor a patientand#39;s ongoing cognitive status. A report is automatically provided at the end of each administration.  Other Features and Benefits • For a broad age range (18-89 years) • Fast administration time (30 to 90 minutes) • Results do not vary across cultural differences • Does not require computer literacy or Internet access (PC-based) • Report credits embedded in software application (separate use counter not required)  Special Uses • Screening for dementia or Alzheimerand#39;s • Determining driving fitness • Evaluating airline pilots (approved by Federal Aviation Administration for re-certification) • Testing neurological function of athletes-pre- and post</skos:definition>
+	<skos:definition>Overview  The first automated neuropsychological battery developed for clinical practice-fast, reliable, extremely efficient  Target specific concerns of cognitive impairment in adults with the updated MicroCog™: Assessment of Cognitive Functioning Windows® Edition (MicroCog™ for Windows®). This version includes significant enhancements and is optimized for Windows®.  Content This computer administered battery tests individuals with 18 subtests that contribute to summary scores for nine interrelated cognitive areas: • Attention-Mental Control • Memory • Spatial Processing • Reasoning-Calculation • Reaction Time • Information Processing Accuracy • Information Processing Speed • Cognitive Functioning • Cognitive Proficiency  Efficient Screener or Diagnostic Instrument • Flexible-allows you to choose which subtests to administer • Provides differential diagnosis across a wide population  Two Forms • Standard Form (60 to 90 minutes) • Short Form (30 to 45 minutes)  User Friendly Most examinees can complete the test quickly and with minimal assistance after a brief orientation by a testing assistant.  Test-Retest, Store Data MicroCog for Windows® stores test data and is proven effective in testretest situations to monitor a patientand#39;s ongoing cognitive status. A report is automatically provided at the end of each administration.  Other Features and Benefits • For a broad age range (18-89 years) • Fast administration time (30 to 90 minutes) • Results do not vary across cultural differences • Does not require computer literacy or Internet access (PC-based) • Report credits embedded in software application (separate use counter not required)  Special Uses • Screening for dementia or Alzheimerand#39;s • Determining driving fitness • Evaluating airline pilots (approved by Federal Aviation Administration for re-certification) • Testing neurological function of athletes-pre- and post</skos:definition>
 	<skos:prefLabel>MicroCog</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -16514,7 +16514,7 @@
 	<dc:Title>Passive Listening</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:06:12</dc:Date>
-	<skos:definition>Subjects listen to various auditory stimuli and make no response.  Stimuli include speech (words, sentences), noise, tones, etc.  If the stimulus is tones, then the experiment is co-coded with Tone Monitor/Discrimination.</skos:definition>
+	<skos:definition>Subjects listen to various auditory stimuli and make no response.  Stimuli include speech (words, sentences), noise, tones, etc.  If the stimulus is tones, then the experiment is co-coded with Tone Monitor-Discrimination.</skos:definition>
 	<skos:prefLabel>Passive Listening</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -16660,12 +16660,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c89903149aeb">
 	<dc:identifier>trm_4c89903149aeb</dc:identifier>
-	<rdfs:label>Imagined Objects/Scenes</rdfs:label>
-	<dc:Title>Imagined Objects/Scenes</dc:Title>
+	<rdfs:label>Imagined Objects-Scenes</rdfs:label>
+	<dc:Title>Imagined Objects-Scenes</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:07:59</dc:Date>
 	<skos:definition>Subject generate vivid images of objects, places, concepts, hypothetical events (not in their past), or the completion of tasks.</skos:definition>
-	<skos:prefLabel>Imagined Objects/Scenes</skos:prefLabel>
+	<skos:prefLabel>Imagined Objects-Scenes</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -16729,12 +16729,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a84afdd863">
 	<dc:identifier>trm_4c8a84afdd863</dc:identifier>
-	<rdfs:label>Vibrotactile Monitor/Discrimination</rdfs:label>
-	<dc:Title>Vibrotactile Monitor/Discrimination</dc:Title>
+	<rdfs:label>Vibrotactile Monitor-Discrimination</rdfs:label>
+	<dc:Title>Vibrotactile Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:16:12</dc:Date>
 	<skos:definition>Subjects experience vibrotactile stimulation to the hand, finger, arm, toe, or lip.</skos:definition>
-	<skos:prefLabel>Vibrotactile Monitor/Discrimination</skos:prefLabel>
+	<skos:prefLabel>Vibrotactile Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -16748,12 +16748,12 @@
 
 <owl:Class rdf:about="&cogat;tsk_4a57abb949a25">
 	<dc:identifier>tsk_4a57abb949a25</dc:identifier>
-	<rdfs:label>Digit/Symbol Coding test</rdfs:label>
-	<dc:Title>Digit/Symbol Coding test</dc:Title>
+	<rdfs:label>Digit-Symbol Coding test</rdfs:label>
+	<dc:Title>Digit-Symbol Coding test</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-19 13:20:28</dc:Date>
-	<skos:definition>a neuropsychological test sensitive to brain damage, dementia, age and depression; consists of (e.g. nine) digit-symbol pairs (e.g. 1/-,2/┴ ... 7/Λ,8/X,9/=) followed by a list of digits. Under each digit the subject should write down the corresponding symbol as fast as possible. The number of correct symbols within the allowed time (e.g. 90 or 120 sec) is measured.</skos:definition>
-	<skos:prefLabel>Digit/Symbol Coding test</skos:prefLabel>
+	<skos:definition>a neuropsychological test sensitive to brain damage, dementia, age and depression; consists of (e.g. nine) digit-symbol pairs (e.g. 1--,2-┴ ... 7-Λ,8-X,9-=) followed by a list of digits. Under each digit the subject should write down the corresponding symbol as fast as possible. The number of correct symbols within the allowed time (e.g. 90 or 120 sec) is measured.</skos:definition>
+	<skos:prefLabel>Digit-Symbol Coding test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -16914,7 +16914,7 @@
 	<dc:Title>Divided Auditory Attention</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:42:32</dc:Date>
-	<skos:definition>During the performance of an unrelated task, subjects simultaneously respond to auditory stimuli (tone or word discrimination, with or without distractors).   Also often co-coded with Tone Monitor/Discrimination.</skos:definition>
+	<skos:definition>During the performance of an unrelated task, subjects simultaneously respond to auditory stimuli (tone or word discrimination, with or without distractors).   Also often co-coded with Tone Monitor-Discrimination.</skos:definition>
 	<skos:prefLabel>Divided Auditory Attention</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -17146,7 +17146,7 @@
 	<dc:Title>Cambridge Neuropsychological Test Automated Battery </dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-15 10:31:43</dc:Date>
-	<skos:definition>is a computer-based cognitive assessment system consisting of a battery of neuropsychological tests, administered to subjects using a touch screen computer. The 22 tests in CANTAB examine various areas of cognitive function, including:  * general memory and learning, * working memory and executive function, * visual memory, * attention and reaction time (RT), * semantic/verbal memory, * decision making and response control.  The CANTAB endeavours to import the accuracy and rigour of computerised psychological testing whilst retaining the wide range of ability measures demanded of a neuropsychological battery. It is suitable for young and old subjects, and aims to be culture and language independent through the use of non-verbal stimuli in the majority of the tests.</skos:definition>
+	<skos:definition>is a computer-based cognitive assessment system consisting of a battery of neuropsychological tests, administered to subjects using a touch screen computer. The 22 tests in CANTAB examine various areas of cognitive function, including:  * general memory and learning, * working memory and executive function, * visual memory, * attention and reaction time (RT), * semantic-verbal memory, * decision making and response control.  The CANTAB endeavours to import the accuracy and rigour of computerised psychological testing whilst retaining the wide range of ability measures demanded of a neuropsychological battery. It is suitable for young and old subjects, and aims to be culture and language independent through the use of non-verbal stimuli in the majority of the tests.</skos:definition>
 	<skos:prefLabel>Cambridge Neuropsychological Test Automated Battery </skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
@@ -17155,12 +17155,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c898c0786246">
 	<dc:identifier>trm_4c898c0786246</dc:identifier>
-	<rdfs:label>Eating/Drinking</rdfs:label>
-	<dc:Title>Eating/Drinking</dc:Title>
+	<rdfs:label>Eating-Drinking</rdfs:label>
+	<dc:Title>Eating-Drinking</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:41:28</dc:Date>
 	<skos:definition>Subjects eat food (e.g., chocolate) or drink liquids (e.g., juice).</skos:definition>
-	<skos:prefLabel>Eating/Drinking</skos:prefLabel>
+	<skos:prefLabel>Eating-Drinking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -17174,12 +17174,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a8329cb8ff">
 	<dc:identifier>trm_4c8a8329cb8ff</dc:identifier>
-	<rdfs:label>Recitation/Repetition (Overt)</rdfs:label>
-	<dc:Title>Recitation/Repetition (Overt)</dc:Title>
+	<rdfs:label>Recitation-Repetition (Overt)</rdfs:label>
+	<dc:Title>Recitation-Repetition (Overt)</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:19:47</dc:Date>
 	<skos:definition>Subjects repeat or recite phonemes, words, or well-known text (nursery rhymes, Pledge of Allegiance, months of the year, etc.) aloud.</skos:definition>
-	<skos:prefLabel>Recitation/Repetition (Overt)</skos:prefLabel>
+	<skos:prefLabel>Recitation-Repetition (Overt)</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -17312,12 +17312,12 @@
 
 <owl:Class rdf:about="&cogat;tsk_4a57abb949869">
 	<dc:identifier>tsk_4a57abb949869</dc:identifier>
-	<rdfs:label>Antisaccade/prosaccade task</rdfs:label>
-	<dc:Title>Antisaccade/prosaccade task</dc:Title>
+	<rdfs:label>Antisaccade-prosaccade task</rdfs:label>
+	<dc:Title>Antisaccade-prosaccade task</dc:Title>
 	<dc:Contributor>Corey White</dc:Contributor>
 	<dc:Date>2011-08-15 11:21:54</dc:Date>
 	<skos:definition>Subjects view a fixation point and a visual target is presented.  Subjects are instructed to make a saccade away from the target (antisaccade) or to the target (prosaccade).</skos:definition>
-	<skos:prefLabel>Antisaccade/prosaccade task</skos:prefLabel>
+	<skos:prefLabel>Antisaccade-prosaccade task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -17458,7 +17458,7 @@
 	<dc:Title>Orthographic Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:09:45</dc:Date>
-	<skos:definition>Subjects view letters and discriminate according to some feature (uppercase/lowercase, alphabetic order, same/different spelling of words, vowel/consonant, font size, etc.).</skos:definition>
+	<skos:definition>Subjects view letters and discriminate according to some feature (uppercase-lowercase, alphabetic order, same-different spelling of words, vowel-consonant, font size, etc.).</skos:definition>
 	<skos:prefLabel>Orthographic Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -17719,12 +17719,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c898cb4ada49">
 	<dc:identifier>trm_4c898cb4ada49</dc:identifier>
-	<rdfs:label>Face Monitor/Discrimination</rdfs:label>
-	<dc:Title>Face Monitor/Discrimination</dc:Title>
+	<rdfs:label>Face Monitor-Discrimination</rdfs:label>
+	<dc:Title>Face Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 15:39:58</dc:Date>
 	<skos:definition>Subjects are presented with human faces and are instructed to view them passively or discriminate according to their order, gender, location, emotion, or appearance.  If the subjects view the faces passively, then the experiment is NOT co-coded with Passive Viewing.</skos:definition>
-	<skos:prefLabel>Face Monitor/Discrimination</skos:prefLabel>
+	<skos:prefLabel>Face Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
 </owl:Class>
@@ -17785,7 +17785,7 @@
 	<dc:Title>Risky Gains task</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-19 12:05:46</dc:Date>
-	<skos:definition>Subjects are presented with a sequence of three numbers in ascending order (20, 40, and 80).  Each number is displayed onscreen for one second and, if the subject presses a button while that number is displayed, he/she receives that number of points along with immediate positive visual and auditory feedback.  When a 40 or 80 appears, however, there is a chance that it will appear in an alternate color, along with immediate negative feedback signaling a loss of 40 or 80 points, respectively.  When this occurs, the trial ends immediately (i.e. the subject may not make a response). </skos:definition>
+	<skos:definition>Subjects are presented with a sequence of three numbers in ascending order (20, 40, and 80).  Each number is displayed onscreen for one second and, if the subject presses a button while that number is displayed, he-she receives that number of points along with immediate positive visual and auditory feedback.  When a 40 or 80 appears, however, there is a chance that it will appear in an alternate color, along with immediate negative feedback signaling a loss of 40 or 80 points, respectively.  When this occurs, the trial ends immediately (i.e. the subject may not make a response). </skos:definition>
 	<skos:prefLabel>Risky Gains task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -17848,7 +17848,7 @@
 	<dc:Title>Passive Viewing</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:05:32</dc:Date>
-	<skos:definition>Subjects view various visual stimuli and make no response.  Stimuli include houses, faces, objects, fractals, letter strings, line drawings, complex scenes, etc. If the presented stimuli were faces, the experiments are co-coded with Face Monitor/Discrimination.  But if the presented stimuli are words, the experiments are NOT coded as Passive Viewing but rather as Reading (Covert).</skos:definition>
+	<skos:definition>Subjects view various visual stimuli and make no response.  Stimuli include houses, faces, objects, fractals, letter strings, line drawings, complex scenes, etc. If the presented stimuli were faces, the experiments are co-coded with Face Monitor-Discrimination.  But if the presented stimuli are words, the experiments are NOT coded as Passive Viewing but rather as Reading (Covert).</skos:definition>
 	<skos:prefLabel>Passive Viewing</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -17873,7 +17873,7 @@
 	<dc:Title>motor sequencing task</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-06-10 14:40:57</dc:Date>
-	<skos:definition>Participants perform several motoric tasks in a specific sequence/order.</skos:definition>
+	<skos:definition>Participants perform several motoric tasks in a specific sequence-order.</skos:definition>
 	<skos:prefLabel>motor sequencing task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -18223,12 +18223,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c89912c79030">
 	<dc:identifier>trm_4c89912c79030</dc:identifier>
-	<rdfs:label>Olfactory Monitor/Discrimination</rdfs:label>
-	<dc:Title>Olfactory Monitor/Discrimination</dc:Title>
+	<rdfs:label>Olfactory Monitor-Discrimination</rdfs:label>
+	<dc:Title>Olfactory Monitor-Discrimination</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:10:26</dc:Date>
-	<skos:definition>Subjects are presented with odors and are instructed to smell them passively or to discriminate according to some feature (pleasant/unpleasant, strong/weak, same/different, etc.).</skos:definition>
-	<skos:prefLabel>Olfactory Monitor/Discrimination</skos:prefLabel>
+	<skos:definition>Subjects are presented with odors and are instructed to smell them passively or to discriminate according to some feature (pleasant-unpleasant, strong-weak, same-different, etc.).</skos:definition>
+	<skos:prefLabel>Olfactory Monitor-Discrimination</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -18242,12 +18242,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8a85534241d">
 	<dc:identifier>trm_4c8a85534241d</dc:identifier>
-	<rdfs:label>Visual Pursuit/Tracking</rdfs:label>
-	<dc:Title>Visual Pursuit/Tracking</dc:Title>
+	<rdfs:label>Visual Pursuit-Tracking</rdfs:label>
+	<dc:Title>Visual Pursuit-Tracking</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-26 14:14:30</dc:Date>
 	<skos:definition>Subjects view a moving target(s) and track its movement across the screen.  Frequently, stimuli are moving dots.</skos:definition>
-	<skos:prefLabel>Visual Pursuit/Tracking</skos:prefLabel>
+	<skos:prefLabel>Visual Pursuit-Tracking</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -18302,7 +18302,7 @@
 	<dc:Title>Maudsley Obsessive Compulsive Inventory</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-06-10 11:05:03</dc:Date>
-	<skos:definition>assess obsessive-compulsive symptoms in the areas of contamination fears and washing behaviors, checking, slowness, and doubting using 30 dichotomously scored (true/false) items, with each pathological response receiving a score of 1. </skos:definition>
+	<skos:definition>assess obsessive-compulsive symptoms in the areas of contamination fears and washing behaviors, checking, slowness, and doubting using 30 dichotomously scored (true-false) items, with each pathological response receiving a score of 1. </skos:definition>
 	<skos:prefLabel>Maudsley Obsessive Compulsive Inventory</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -18688,12 +18688,12 @@
 
 <owl:Class rdf:about="&cogat;tsk_4a57abb949a93">
 	<dc:identifier>tsk_4a57abb949a93</dc:identifier>
-	<rdfs:label>Go/no-go task</rdfs:label>
-	<dc:Title>Go/no-go task</dc:Title>
+	<rdfs:label>Go-no-go task</rdfs:label>
+	<dc:Title>Go-no-go task</dc:Title>
 	<dc:Contributor>Agatha Lenartowicz</dc:Contributor>
 	<dc:Date>2009-07-10 14:06:33</dc:Date>
 	<skos:definition>A task in which stimuli are presented in a continuous stream and participants perform a binary decision on each stimulus. One of the outcomes requires participants to make a motor response (go), whereas the other requires participants to withhold a response (no-go). Accuracy and reaction time are measured for each event. Go events typically occur with higher frequency than no-go events. </skos:definition>
-	<skos:prefLabel>Go/no-go task</skos:prefLabel>
+	<skos:prefLabel>Go-no-go task</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -18933,13 +18933,13 @@
 
 <owl:Class rdf:about="&cogat;trm_4e5662373bc89">
 	<dc:identifier>trm_4e5662373bc89</dc:identifier>
-	<rdfs:label>heat sensitization/adaptation</rdfs:label>
-	<dc:Title>heat sensitization/adaptation</dc:Title>
+	<rdfs:label>heat sensitization-adaptation</rdfs:label>
+	<dc:Title>heat sensitization-adaptation</dc:Title>
 	<dc:Contributor>Birgit Nierula</dc:Contributor>
 	<dc:Date>2011-08-25 07:56:25</dc:Date>
 	<skos:definition>A long (~ 30 seconds or more) heat stimulus is applied to the skin and the participant rates the experienced sensation continuously on a visual analogue scale</skos:definition>
-	<skos:prefLabel>heat sensitization/adaptation</skos:prefLabel>
-	<skos:altLabel>heat sensibilization / habituation</skos:altLabel>
+	<skos:prefLabel>heat sensitization-adaptation</skos:prefLabel>
+	<skos:altLabel>heat sensibilization - habituation</skos:altLabel>
 	<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00049"/>
 </owl:Class>
 
@@ -19422,7 +19422,7 @@
 	<dc:Title>symbol-digit substitution</dc:Title>
 	<dc:Contributor>Natalie Picchetti</dc:Contributor>
 	<dc:Date>2011-04-07 11:03:43</dc:Date>
-	<skos:definition>DSST is a neuropsychological test sensitive to brain damage, dementia, age and depression. It isn’t sensitive to the location of brain-damage (except for damage comprising part of the visual field). It consists of (e.g. nine) digit-symbol pairs (e.g. 1/-,2/┴ ... 7/Λ,8/X,9/=) followed by a list of digits. Under each digit the subject should write down the corresponding symbol as fast as possible. The number of correct symbols within the allowed time (e.g. 90 or 120 sec) is measured. </skos:definition>
+	<skos:definition>DSST is a neuropsychological test sensitive to brain damage, dementia, age and depression. It isn’t sensitive to the location of brain-damage (except for damage comprising part of the visual field). It consists of (e.g. nine) digit-symbol pairs (e.g. 1--,2-┴ ... 7-Λ,8-X,9-=) followed by a list of digits. Under each digit the subject should write down the corresponding symbol as fast as possible. The number of correct symbols within the allowed time (e.g. 90 or 120 sec) is measured. </skos:definition>
 	<skos:prefLabel>symbol-digit substitution</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -20000,7 +20000,7 @@
 	<dc:Title>Hayling Sentence Completion Test</dc:Title>
 	<dc:Contributor>Carinna Torgerson</dc:Contributor>
 	<dc:Date>2011-06-27 13:47:59</dc:Date>
-	<skos:definition>Participants are given the beginnings of sentences to complete. The sentences appear to have expected answers. In the first condition, participants must complete the sentence with a/the word that makes sense. In the second condition, participants are asked to complete sentences by saying semantically unrelated words, thereby making the sentence nonsensical.</skos:definition>
+	<skos:definition>Participants are given the beginnings of sentences to complete. The sentences appear to have expected answers. In the first condition, participants must complete the sentence with a-the word that makes sense. In the second condition, participants are asked to complete sentences by saying semantically unrelated words, thereby making the sentence nonsensical.</skos:definition>
 	<skos:prefLabel>Hayling Sentence Completion Test</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
@@ -20058,12 +20058,12 @@
 
 <owl:Class rdf:about="&cogat;trm_4c8990b07a037">
 	<dc:identifier>trm_4c8990b07a037</dc:identifier>
-	<rdfs:label>Music Comprehension/Production</rdfs:label>
-	<dc:Title>Music Comprehension/Production</dc:Title>
+	<rdfs:label>Music Comprehension-Production</rdfs:label>
+	<dc:Title>Music Comprehension-Production</dc:Title>
 	<dc:Contributor>Brenda Gregory</dc:Contributor>
 	<dc:Date>2011-04-27 14:01:56</dc:Date>
 	<skos:definition>Subjects listen to music passively or are asked to sing overtly.</skos:definition>
-	<skos:prefLabel>Music Comprehension/Production</skos:prefLabel>
+	<skos:prefLabel>Music Comprehension-Production</skos:prefLabel>
 	<skos:altLabel></skos:altLabel>
 	<rdfs:subClassOf>
 		<owl:Restriction>
@@ -20916,7 +20916,7 @@
 <owl:Class rdf:about="&cogat;con_4e0112e7d3937">
 	<dc:identifier>con_4e0112e7d3937</dc:identifier>
 	<skos:definition>participant is shown words and asked to later identify which ones have been seen before</skos:definition>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-RMW</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-RMW</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -20930,7 +20930,7 @@
 <owl:Class rdf:about="&cogat;con_4e011301aec43">
 	<dc:identifier>con_4e011301aec43</dc:identifier>
 	<skos:definition>participant is shown faces and asked to later identify which ones have been seen before</skos:definition>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-RMF</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-RMF</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -21938,7 +21938,7 @@
 <owl:Class rdf:about="&cogat;con_4de929a6133f6">
 	<dc:identifier>con_4de929a6133f6</dc:identifier>
 	<skos:definition>in this version of the digit/symbol coding test, participants are shown a list of digits and symbols and immediately asked to write down the symbols that correspond to a list of digits</skos:definition>
-	<rdfs:label>Digit/Symbol_Coding_test-immediate_memory_copy</rdfs:label>
+	<rdfs:label>Digit-Symbol_Coding_test-immediate_memory_copy</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -21952,7 +21952,7 @@
 <owl:Class rdf:about="&cogat;con_4de929f983464">
 	<dc:identifier>con_4de929f983464</dc:identifier>
 	<skos:definition>in this version of the digit/symbol coding test, participants are given time to study a list of digits and symbols and, after a period of time, asked to write down the symbols that correspond to a list of digits</skos:definition>
-	<rdfs:label>Digit/Symbol_Coding_test-general_memory_copy</rdfs:label>
+	<rdfs:label>Digit-Symbol_Coding_test-general_memory_copy</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -22036,7 +22036,7 @@
 <owl:Class rdf:about="&cogat;con_4de55b6707137">
 	<dc:identifier>con_4de55b6707137</dc:identifier>
 	<skos:definition>eye movements away from the fixation point</skos:definition>
-	<rdfs:label>Antisaccade/prosaccade_task-antisaccade</rdfs:label>
+	<rdfs:label>Antisaccade-prosaccade_task-antisaccade</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -22050,7 +22050,7 @@
 <owl:Class rdf:about="&cogat;con_4de55b77a975e">
 	<dc:identifier>con_4de55b77a975e</dc:identifier>
 	<skos:definition>eye movements toward the fixation point</skos:definition>
-	<rdfs:label>Antisaccade/prosaccade_task-prosaccade</rdfs:label>
+	<rdfs:label>Antisaccade-prosaccade_task-prosaccade</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -22722,7 +22722,7 @@
 <owl:Class rdf:about="&cogat;con_4b4a2f2e253fc">
 	<dc:identifier>con_4b4a2f2e253fc</dc:identifier>
 	<skos:definition>Trials on which the stimulus is in the go category</skos:definition>
-	<rdfs:label>Go/no-go_task-Go_trials</rdfs:label>
+	<rdfs:label>Go-no-go_task-Go_trials</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -22736,7 +22736,7 @@
 <owl:Class rdf:about="&cogat;con_4b4a2f46e10c3">
 	<dc:identifier>con_4b4a2f46e10c3</dc:identifier>
 	<skos:definition>Trials on which the stimulus is in the stop category</skos:definition>
-	<rdfs:label>Go/no-go_task-Stop_trial</rdfs:label>
+	<rdfs:label>Go-no-go_task-Stop_trial</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -23394,7 +23394,7 @@
 <owl:Class rdf:about="&cogat;con_4df298c5963fa">
 	<dc:identifier>con_4df298c5963fa</dc:identifier>
 	<skos:definition>subjects are played music and tested to see if they processed it, remembered it, or had the same auditory experience as others</skos:definition>
-	<rdfs:label>Music_Comprehension/Production-Comprehension</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-Comprehension</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -23408,7 +23408,7 @@
 <owl:Class rdf:about="&cogat;con_4df298fddcc24">
 	<dc:identifier>con_4df298fddcc24</dc:identifier>
 	<skos:definition>subjects are asked to play or sing music </skos:definition>
-	<rdfs:label>Music_Comprehension/Production-Production</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-Production</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&ro;part_of"/>
@@ -23664,7 +23664,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e02624559a17">
 	<dc:identifier>cnt_4e02624559a17</dc:identifier>
-	<rdfs:label>Recitation/Repetition_(Covert)-areas_of_activation_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Recitation-Repetition_(Covert)-areas_of_activation_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23677,7 +23677,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e02624cbd6c7">
 	<dc:identifier>cnt_4e02624cbd6c7</dc:identifier>
-	<rdfs:label>Recitation/Repetition_(Covert)-BOLD_activity_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Recitation-Repetition_(Covert)-BOLD_activity_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23807,7 +23807,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e00fd3de3b0a">
 	<dc:identifier>cnt_4e00fd3de3b0a</dc:identifier>
-	<rdfs:label>Visual_Distractor/Visual_Attention-dand#39</rdfs:label>
+	<rdfs:label>Visual_Distractor-Visual_Attention-dand#39</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23820,7 +23820,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e00fd62beac3">
 	<dc:identifier>cnt_4e00fd62beac3</dc:identifier>
-	<rdfs:label>Visual_Distractor/Visual_Attention-reaction_time_after_some_manipulation_minus_reaction_time_at_baseline</rdfs:label>
+	<rdfs:label>Visual_Distractor-Visual_Attention-reaction_time_after_some_manipulation_minus_reaction_time_at_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23833,7 +23833,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e00ffaa486fa">
 	<dc:identifier>cnt_4e00ffaa486fa</dc:identifier>
-	<rdfs:label>Visual_Distractor/Visual_Attention-path_of_eye_movements</rdfs:label>
+	<rdfs:label>Visual_Distractor-Visual_Attention-path_of_eye_movements</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23937,7 +23937,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dffb78e1edc6">
 	<dc:identifier>cnt_4dffb78e1edc6</dc:identifier>
-	<rdfs:label>Tone_Monitor/Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Tone_Monitor-Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23950,7 +23950,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df689d409dec">
 	<dc:identifier>cnt_4df689d409dec</dc:identifier>
-	<rdfs:label>Pain_Monitor/Discrimination_Task-average_rating_of_sensation_minus_subject_rating_of_sensation</rdfs:label>
+	<rdfs:label>Pain_Monitor-Discrimination_Task-average_rating_of_sensation_minus_subject_rating_of_sensation</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23963,7 +23963,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df689e663ffe">
 	<dc:identifier>cnt_4df689e663ffe</dc:identifier>
-	<rdfs:label>Pain_Monitor/Discrimination_Task-areas_of_activation_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Pain_Monitor-Discrimination_Task-areas_of_activation_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -23976,7 +23976,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df689fe846de">
 	<dc:identifier>cnt_4df689fe846de</dc:identifier>
-	<rdfs:label>Pain_Monitor/Discrimination_Task-subject_rating_during_task_minus_subject_baseline_rating</rdfs:label>
+	<rdfs:label>Pain_Monitor-Discrimination_Task-subject_rating_during_task_minus_subject_baseline_rating</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24366,7 +24366,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e03ae76b40ab">
 	<dc:identifier>cnt_4e03ae76b40ab</dc:identifier>
-	<rdfs:label>Flexion/Extension-average_degrees_of_movement_minus_participant_degrees_of_movement</rdfs:label>
+	<rdfs:label>Flexion-Extension-average_degrees_of_movement_minus_participant_degrees_of_movement</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24431,7 +24431,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e037a9a47d41">
 	<dc:identifier>cnt_4e037a9a47d41</dc:identifier>
-	<rdfs:label>Spatial/Location_Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Spatial-Location_Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24665,7 +24665,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0112e7d3bca">
 	<dc:identifier>cnt_4e0112e7d3bca</dc:identifier>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-RMW</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-RMW</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24678,7 +24678,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e011301aee39">
 	<dc:identifier>cnt_4e011301aee39</dc:identifier>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-RMF</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-RMF</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24691,7 +24691,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e01131ba65a7">
 	<dc:identifier>cnt_4e01131ba65a7</dc:identifier>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-RMW_minus_RMF</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-RMW_minus_RMF</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -24704,7 +24704,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0113430ffad">
 	<dc:identifier>cnt_4e0113430ffad</dc:identifier>
-	<rdfs:label>Warrington's_Face/Word_Recognition_Test-participant_score_minus_average_score</rdfs:label>
+	<rdfs:label>Warrington's_Face-Word_Recognition_Test-participant_score_minus_average_score</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -25029,7 +25029,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df7af3c32a49">
 	<dc:identifier>cnt_4df7af3c32a49</dc:identifier>
-	<rdfs:label>Pitch_Monitor/Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Pitch_Monitor-Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -25042,7 +25042,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de95d2ff1462">
 	<dc:identifier>cnt_4de95d2ff1462</dc:identifier>
-	<rdfs:label>Chewing/Swallowing-muscle_control</rdfs:label>
+	<rdfs:label>Chewing-Swallowing-muscle_control</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -25055,7 +25055,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0399bbae0ed">
 	<dc:identifier>cnt_4e0399bbae0ed</dc:identifier>
-	<rdfs:label>Chewing/Swallowing-areas_of_activation_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Chewing-Swallowing-areas_of_activation_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -25406,7 +25406,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dfa7d117d48f">
 	<dc:identifier>cnt_4dfa7d117d48f</dc:identifier>
-	<rdfs:label>Sequence_Recall/Learning-accuracy_with_learning_minus_accuracy_without_learning/practice</rdfs:label>
+	<rdfs:label>Sequence_Recall-Learning-accuracy_with_learning_minus_accuracy_without_learning/practice</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -25419,7 +25419,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dfa7d1ad09a6">
 	<dc:identifier>cnt_4dfa7d1ad09a6</dc:identifier>
-	<rdfs:label>Sequence_Recall/Learning-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Sequence_Recall-Learning-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26017,7 +26017,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dff8603c1398">
 	<dc:identifier>cnt_4dff8603c1398</dc:identifier>
-	<rdfs:label>Tactile_Monitor/Discrimination-response_time_to_second_stimulus_minus_response_time_to_first_stimulus</rdfs:label>
+	<rdfs:label>Tactile_Monitor-Discrimination-response_time_to_second_stimulus_minus_response_time_to_first_stimulus</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26030,7 +26030,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dff865de2859">
 	<dc:identifier>cnt_4dff865de2859</dc:identifier>
-	<rdfs:label>Tactile_Monitor/Discrimination-precision_of_participant_minus_precision_of_controls</rdfs:label>
+	<rdfs:label>Tactile_Monitor-Discrimination-precision_of_participant_minus_precision_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26134,7 +26134,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e08fb9717d43">
 	<dc:identifier>cnt_4e08fb9717d43</dc:identifier>
-	<rdfs:label>Span/Supra-Span_Test-supra-span_minus_span</rdfs:label>
+	<rdfs:label>Span-Supra-Span_Test-supra-span_minus_span</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26745,7 +26745,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dee551d3a46b">
 	<dc:identifier>cnt_4dee551d3a46b</dc:identifier>
-	<rdfs:label>Imagined_Objects/Scenes-real_visual_areas_of_activation_minus_imagined_task_areas_of_activation</rdfs:label>
+	<rdfs:label>Imagined_Objects-Scenes-real_visual_areas_of_activation_minus_imagined_task_areas_of_activation</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26758,7 +26758,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4dee593ebfcc7">
 	<dc:identifier>cnt_4dee593ebfcc7</dc:identifier>
-	<rdfs:label>Imagined_Objects/Scenes-physical_representation_of_imagined_object</rdfs:label>
+	<rdfs:label>Imagined_Objects-Scenes-physical_representation_of_imagined_object</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26797,7 +26797,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e00ccaa100fd">
 	<dc:identifier>cnt_4e00ccaa100fd</dc:identifier>
-	<rdfs:label>Vibrotactile_Monitor/Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Vibrotactile_Monitor-Discrimination-accuracy_of_participant_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26810,7 +26810,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de929a613652">
 	<dc:identifier>cnt_4de929a613652</dc:identifier>
-	<rdfs:label>Digit/Symbol_Coding_test-immediate_memory_copy</rdfs:label>
+	<rdfs:label>Digit-Symbol_Coding_test-immediate_memory_copy</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26823,7 +26823,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de929f98367a">
 	<dc:identifier>cnt_4de929f98367a</dc:identifier>
-	<rdfs:label>Digit/Symbol_Coding_test-general_memory_copy</rdfs:label>
+	<rdfs:label>Digit-Symbol_Coding_test-general_memory_copy</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -26836,7 +26836,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de92b983089e">
 	<dc:identifier>cnt_4de92b983089e</dc:identifier>
-	<rdfs:label>Digit/Symbol_Coding_test-digit/symbol_coding_-_symbol_copy</rdfs:label>
+	<rdfs:label>Digit-Symbol_Coding_test-digit/symbol_coding_-_symbol_copy</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27148,7 +27148,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de95f0aa8476">
 	<dc:identifier>cnt_4de95f0aa8476</dc:identifier>
-	<rdfs:label>Eating/Drinking-amount_consumed</rdfs:label>
+	<rdfs:label>Eating-Drinking-amount_consumed</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27161,7 +27161,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e026543eae67">
 	<dc:identifier>cnt_4e026543eae67</dc:identifier>
-	<rdfs:label>Recitation/Repetition_(Overt)-areas_of_activation_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Recitation-Repetition_(Overt)-areas_of_activation_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27174,7 +27174,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e02654a92111">
 	<dc:identifier>cnt_4e02654a92111</dc:identifier>
-	<rdfs:label>Recitation/Repetition_(Overt)-areas_of_activation_during_covert_minus_areas_of_activation_during_overt</rdfs:label>
+	<rdfs:label>Recitation-Repetition_(Overt)-areas_of_activation_during_covert_minus_areas_of_activation_during_overt</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27187,7 +27187,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0265502e5be">
 	<dc:identifier>cnt_4e0265502e5be</dc:identifier>
-	<rdfs:label>Recitation/Repetition_(Overt)-BOLD_activity_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Recitation-Repetition_(Overt)-BOLD_activity_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27265,7 +27265,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de55b6707536">
 	<dc:identifier>cnt_4de55b6707536</dc:identifier>
-	<rdfs:label>Antisaccade/prosaccade_task-antisaccade</rdfs:label>
+	<rdfs:label>Antisaccade-prosaccade_task-antisaccade</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27278,7 +27278,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4de55b77a9984">
 	<dc:identifier>cnt_4de55b77a9984</dc:identifier>
-	<rdfs:label>Antisaccade/prosaccade_task-prosaccade</rdfs:label>
+	<rdfs:label>Antisaccade-prosaccade_task-prosaccade</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27980,7 +27980,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df67df7aaaea">
 	<dc:identifier>cnt_4df67df7aaaea</dc:identifier>
-	<rdfs:label>Olfactory_Monitor/Discrimination-average_accuracy_of_controls_minus_accuracy_of_participant</rdfs:label>
+	<rdfs:label>Olfactory_Monitor-Discrimination-average_accuracy_of_controls_minus_accuracy_of_participant</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -27993,7 +27993,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0101e7e8898">
 	<dc:identifier>cnt_4e0101e7e8898</dc:identifier>
-	<rdfs:label>Visual_Pursuit/Tracking-dand#39</rdfs:label>
+	<rdfs:label>Visual_Pursuit-Tracking-dand#39</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -28006,7 +28006,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0104905eaa1">
 	<dc:identifier>cnt_4e0104905eaa1</dc:identifier>
-	<rdfs:label>Visual_Pursuit/Tracking-frequency_of_participantand#39</rdfs:label>
+	<rdfs:label>Visual_Pursuit-Tracking-frequency_of_participantand#39</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -28019,7 +28019,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4e0104d85693b">
 	<dc:identifier>cnt_4e0104d85693b</dc:identifier>
-	<rdfs:label>Visual_Pursuit/Tracking-path_of_eye_movements</rdfs:label>
+	<rdfs:label>Visual_Pursuit-Tracking-path_of_eye_movements</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -28370,7 +28370,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4b4a2f2e27574">
 	<dc:identifier>cnt_4b4a2f2e27574</dc:identifier>
-	<rdfs:label>Go/no-go_task-Go_trials</rdfs:label>
+	<rdfs:label>Go-no-go_task-Go_trials</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -28383,7 +28383,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4b4a2f46e2faa">
 	<dc:identifier>cnt_4b4a2f46e2faa</dc:identifier>
-	<rdfs:label>Go/no-go_task-Stop_trial</rdfs:label>
+	<rdfs:label>Go-no-go_task-Stop_trial</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -28396,7 +28396,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4ded4dc5b5118">
 	<dc:identifier>cnt_4ded4dc5b5118</dc:identifier>
-	<rdfs:label>Go/no-go_task-stop_minus_go</rdfs:label>
+	<rdfs:label>Go-no-go_task-stop_minus_go</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -29475,7 +29475,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df298c596941">
 	<dc:identifier>cnt_4df298c596941</dc:identifier>
-	<rdfs:label>Music_Comprehension/Production-Comprehension</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-Comprehension</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -29488,7 +29488,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df298fddce13">
 	<dc:identifier>cnt_4df298fddce13</dc:identifier>
-	<rdfs:label>Music_Comprehension/Production-Production</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-Production</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -29501,7 +29501,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df29910c149e">
 	<dc:identifier>cnt_4df29910c149e</dc:identifier>
-	<rdfs:label>Music_Comprehension/Production-areas_of_activation_during_task_minus_baseline</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-areas_of_activation_during_task_minus_baseline</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
@@ -29514,7 +29514,7 @@
 
 <owl:Class rdf:about="&cogat;cnt_4df29978d4002">
 	<dc:identifier>cnt_4df29978d4002</dc:identifier>
-	<rdfs:label>Music_Comprehension/Production-accuracy_of_subject_minus_average_accuracy_of_controls</rdfs:label>
+	<rdfs:label>Music_Comprehension-Production-accuracy_of_subject_minus_average_accuracy_of_controls</rdfs:label>
 	<rdfs:subClassOf>
 		<owl:Restriction>
 			<owl:onProperty rdf:resource="&cogpo;is_related_to"/>
