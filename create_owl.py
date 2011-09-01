@@ -110,7 +110,7 @@ for c in owl_classes:
     for e in cl:
         for f in concept_fields:
             if e.find(f)>-1:
-                owl_dict[id][f]=getcontent(e)
+                owl_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
     
     owl_dict[id]['dc:Title']=owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
     owl_dict[id]['relations']=[]
@@ -151,7 +151,8 @@ for c in owl_classes:
     for e in cl:
         for f in task_fields:
             if e.find(f)>-1:
-                owl_task_dict[id][f]=getcontent(e).replace('&','and')
+                owl_task_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
+                
     owl_task_dict[id]['dc:Title']=owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
     owl_task_dict[id]['relations']=[]
     owl_task_dict[id]['conditions']=[]
