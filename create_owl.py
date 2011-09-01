@@ -3,6 +3,8 @@
 
 Code to translate the Cognitive Atlas database dump into OWL format.
 
+requires: nltk
+
 """
 
 ## Copyright 2011, Russell Poldrack. All rights reserved.
@@ -27,7 +29,32 @@ Code to translate the Cognitive Atlas database dump into OWL format.
 ## NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ## ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+import pickle
+from nltk import pos_tag, word_tokenize
 
+def make_sentence_case(s):
+    """ make sentence case, excluding acronyms in parens and keeping proper nouns"""
+    ss=s.split('(')
+ #   ss_tag=pos_tag(word_tokenize(ss))
+    
+    ss[0]=ss[0][0]+ss[0][1:].lower()
+    ssc='('.join(ss)
+    return ssc
+
+# load in the ID dictionary if it exists
+
+id_dictionary_file='ontology/id_dictionary.pkl'
+try:
+    pklfile=open(id_dictionary_file,'rb')
+    id_dictionary=pickle.load(pklfile)
+    pklfile.close()
+    dict_ctr=len(id_dictionary)
+    existing_pickle_count=dict_ctr
+except:
+    existing_pickle_count=0
+    id_dictionary={}
+    dict_ctr=0
+    
 # first fix the concepts file
 
 rdf_file='ontology/all_concepts.rdf'
@@ -84,7 +111,7 @@ for a in object_properties:
 
 properties=properties+'\n\n'
 
-properties=properties+'<owl:Class rdf:about="&cogat;MentalConcept">\n\t<rdfs:subClassOf rdf:resource="&skos;Concept"/>\n</owl:Class>\n\n'
+properties=properties+'<owl:Class rdf:about="&cogat;CAO_00001">\n\t<rdfs:subClassOf rdf:resource="&skos;Concept"/>\n</owl:Class>\n\n'
 
 
 # 5. fix each class
@@ -111,10 +138,15 @@ for c in owl_classes:
         for f in concept_fields:
             if e.find(f)>-1:
                 owl_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
-    
-    owl_dict[id]['dc:Title']=owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
+    if not id_dictionary.has_key(owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()):
+        id_dictionary[owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()]='CAO_%05d'%dict_ctr
+        dict_ctr+=1
+        
+    owl_dict[id]['dc:identifier']=owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()
+    owl_dict[id]['dc:Title']=id_dictionary[owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()]
+    owl_dict[id]['skos:prefLabel']=make_sentence_case(owl_dict[id]['skos:prefLabel'])
     owl_dict[id]['relations']=[]
-    owl_dict[id]['superClass']='&cogat;MentalConcept'
+    owl_dict[id]['superClass']='&cogat;CAO_00001'
     ctr+=1
 
 # read in tasks
@@ -153,7 +185,13 @@ for c in owl_classes:
             if e.find(f)>-1:
                 owl_task_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
                 
-    owl_task_dict[id]['dc:Title']=owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
+    if not id_dictionary.has_key(owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')):
+        id_dictionary[owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')]='CAO_%05d'%dict_ctr
+        dict_ctr+=1
+        
+    owl_task_dict[id]['dc:identifier']=owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')
+    owl_task_dict[id]['dc:Title']=id_dictionary[owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','')]
+    owl_task_dict[id]['skos:prefLabel']=make_sentence_case(owl_task_dict[id]['skos:prefLabel'])
     owl_task_dict[id]['relations']=[]
     owl_task_dict[id]['conditions']=[]
     owl_task_dict[id]['contrasts']=[]
@@ -338,3 +376,9 @@ f.write('<!-- http://www.ifomis.org/bfo/1.1/span#Process -->\n\n<owl:Class rdf:a
 f.write('</rdf:RDF>\n')
 
 f.close()
+
+if not dict_ctr==existing_pickle_count:
+    print 'added new terms, saving dictionary...'
+    pklfile=open(id_dictionary_file,'wb')
+    pickle.dump(id_dictionary,pklfile)
+    pklfile.close()
