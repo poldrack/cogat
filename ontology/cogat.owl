@@ -25,6 +25,10 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
 	xmlns:cogpo="http://www.cogpo.org/ontologies/working/CogPOver2011.owl#"> 
+<owl:Ontology rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl">
+	<owl:versionInfo>0.2.2</owl:versionInfo></owl:Ontology>
+
+
 
 
 <!--
