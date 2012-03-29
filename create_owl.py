@@ -4,6 +4,19 @@
 Code to translate the Cognitive Atlas database dump into OWL format.
 
 
+Concepts and tasks can be exported as csv on the admin page: 
+http://www.cognitiveatlas.org/admin/
+I will expand that code to include relations, conditions and contrasts, 
+but for now I just export those tables from phpMyAdmin.
+
+Generate Task Records
+http://www.cognitiveatlas.org/rdf/testgenall.php?type=task
+
+Generate Concept Records
+http://www.cognitiveatlas.org/rdf/testgenall.php?type=concept
+
+
+
 """
 
 ## Copyright 2011, Russell Poldrack. All rights reserved.
@@ -29,7 +42,7 @@ Code to translate the Cognitive Atlas database dump into OWL format.
 ## ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import pickle
-versionString='0.2.2'
+versionString='0.3'
 
 def make_sentence_case(s):
     """ make sentence case, excluding acronyms in parens and keeping proper nouns"""
@@ -90,7 +103,7 @@ entities=entities+']>\n\n'
 # 4. add descriptions of properties 
 properties='<!--\n//Annotation Properties\n-->\n\n'
 
-concept_fields=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
+concept_fields=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel','skos:hasTopConcept']
 task_fields=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
 
 annotation_properties=['&'+a.replace(':',';') for a in set(concept_fields + task_fields)]
@@ -281,7 +294,7 @@ f.write(entities)
 f.write(rdf_preamble+'\n\n\n')
 f.write(properties)
 
-attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
+attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel','skos:hasTopConcept']
 for a in owl_dict.iterkeys():
     d=owl_dict[a]
     f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[a])
