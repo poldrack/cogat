@@ -77,7 +77,7 @@ additional_namespaces=['xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"','xmlns
 for a in additional_namespaces:
     rdf_preamble=rdf_preamble.replace('> ','\n\t%s> '%a)
 
-rdf_preamble=rdf_preamble+'\n<owl:Ontology rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl">\n\t<owl:versionInfo>%s</owl:versionInfo></owl:Ontology>\n\n'%versionString
+rdf_preamble=rdf_preamble+'\n\n<owl:Ontology rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl">\n\t<owl:versionInfo>%s</owl:versionInfo>\n</owl:Ontology>\n\n'%versionString
 
 rdf_entities=['dc "http://purl.org/dc/elements/1.1/"','ro "http://www.obofoundry.org/ro/ro.owl#"','cogat "http://www.cognitiveatlas.org/ontology/cogat.owl#"','rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"','skos "http://www.w3.org/2004/02/skos/core#"','rdfs "http://www.w3.org/2000/01/rdf-schema#"','span "http://www.ifomis.org/bfo/1.1/span#"','cogpo "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#"']
 
