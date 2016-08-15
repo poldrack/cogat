@@ -4,9 +4,9 @@
 Code to translate the Cognitive Atlas database dump into OWL format.
 
 
-Concepts and tasks can be exported as csv on the admin page: 
+Concepts and tasks can be exported as csv on the admin page:
 http://www.cognitiveatlas.org/admin/
-I will expand that code to include relations, conditions and contrasts, 
+I will expand that code to include relations, conditions and contrasts,
 but for now I just export those tables from phpMyAdmin.
 
 Generate Task Records
@@ -42,11 +42,11 @@ http://www.cognitiveatlas.org/rdf/testgenall.php?type=concept
 ## ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import pickle
-versionString='0.3'
+versionString='0.3.1'
 
 def make_sentence_case(s):
     """ make sentence case, excluding acronyms in parens and keeping proper nouns"""
-    ss=s.split('(')    
+    ss=s.split('(')
     ss[0]=ss[0][0].upper()+ss[0][1:].lower()
     ssc='('.join(ss)
     return ssc
@@ -65,7 +65,7 @@ except:
     id_dictionary={}
     # save the first 100 entries for reserved words
     dict_ctr=101
-    
+
 # first fix the concepts file
 
 rdf_file='ontology/all_concepts.rdf'
@@ -100,7 +100,7 @@ for a in rdf_entities:
 entities=entities+']>\n\n'
 
 
-# 4. add descriptions of properties 
+# 4. add descriptions of properties
 properties='<!--\n//Annotation Properties\n-->\n\n'
 
 concept_fields=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel','skos:hasTopConcept']
@@ -151,16 +151,16 @@ for c in owl_classes:
     owl_dict[id]={}
     for f in concept_fields:
         owl_dict[id][f]=''
-        
+
     for e in cl:
         for f in concept_fields:
             if e.find(f)>-1:
                 owl_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
     owl_dict[id]['dc:Title']=make_sentence_case(owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ',''))
-    if not id_dictionary.has_key(id):
+    if id not in id_dictionary:
         id_dictionary[id]='CAO_%05d'%dict_ctr
         dict_ctr+=1
-        
+
     owl_dict[id]['dc:identifier']=id
 #    owl_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()
     owl_dict[id]['rdf:about']=id_dictionary[id]
@@ -199,16 +199,22 @@ for c in owl_classes:
     owl_task_dict[id]={}
     for f in task_fields:
         owl_task_dict[id][f]=''
-        
+
     for e in cl:
         for f in task_fields:
             if e.find(f)>-1:
                 owl_task_dict[id][f]=getcontent(e).replace('&','and').replace('/','-').replace('_','-')
+    if len(owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ',''))==0:
+        del owl_task_dict[id]
+        owl_task_id.remove(id)
+        continue
+
     owl_task_dict[id]['dc:Title']=make_sentence_case(owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ',''))
-    if not id_dictionary.has_key(id):
+
+    if id not in id_dictionary:
         id_dictionary[id]='CAO_%05d'%dict_ctr
         dict_ctr+=1
-        
+
     owl_task_dict[id]['dc:identifier']=id
 #    owl_task_dict[id]['dc:Title'].replace('Cognitive Atlas : Lexicon : ','').lower()
     owl_task_dict[id]['rdf:about']=id_dictionary[id]
@@ -226,22 +232,29 @@ conditions_file='ontology/type_condition.csv'
 conditions=[]
 conditions_dict={}
 f=open(conditions_file,'r')
+header=f.readline()
 for l in f.readlines():
     conditions.append(l.strip().replace('"','').split(';'))
 
 for c in conditions:
+    if len(c)<3:
+        continue
+    if not c[2] in owl_task_dict.keys():
+        continue
     owl_task_dict[c[2]]['conditions'].append(c)
     conditions_dict[c[0]]=c[2]
-    if not id_dictionary.has_key(c[0]):
+    if c[0] not in id_dictionary:
        id_dictionary[c[0]]='CAO_%05d'%dict_ctr
        dict_ctr+=1
-         
+
 # read in contrasts
 
 contrasts_file='ontology/type_contrast.csv'
 contrasts=[]
 contrasts_dict={}
 f=open(contrasts_file,'r')
+header=f.readline()
+
 for l in f.readlines():
     contrasts.append(l.strip().replace('"','').split(';'))
 
@@ -249,11 +262,11 @@ for c in contrasts:
     try:
         owl_task_dict[c[2]]['contrasts'].append(c)
         contrasts_dict[c[0]]=c[2]
-        if not id_dictionary.has_key(c[0]):
+        if c[0] not in id_dictionary:
            id_dictionary[c[0]]='CAO_%05d'%dict_ctr
            dict_ctr+=1
     except:
-        print 'problem adding %s'%c
+        print('problem adding %s'%c)
 
 # read in relations
 
@@ -268,8 +281,10 @@ for c in contrasts:
 relation_file='ontology/table_assertion.csv'
 relations=[]
 f=open(relation_file,'r')
+header=f.readline()
+
 for l in f.readlines():
-    relations.append(l.strip().replace('"','').split(';'))    
+    relations.append(l.strip().replace('"','').split(';'))
 
 f.close()
 
@@ -278,9 +293,9 @@ relations_legend=relations[0]
 relations.remove(relations[0])  # get rid of legend
 
 for r in relations:
-    if owl_dict.has_key(r[2]):
+    if r[2] in owl_dict:
         owl_dict[r[2]]['relations'].append(r)
-    elif owl_task_dict.has_key(r[2]):
+    elif r[2] in owl_task_dict:
         owl_task_dict[r[2]]['relations'].append(r)
     #else:
     #    print 'problem with %s'%r
@@ -295,7 +310,7 @@ f.write(rdf_preamble+'\n\n\n')
 f.write(properties)
 
 attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel','skos:hasTopConcept']
-for a in owl_dict.iterkeys():
+for a in owl_dict.keys():
     d=owl_dict[a]
     f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[a])
     f.write('\t<rdfs:label>%s</rdfs:label>\n'%d['dc:Title'])
@@ -306,11 +321,11 @@ for a in owl_dict.iterkeys():
     measured_by_relations=[]
     if len(d['relations'])>0:
         for r in d['relations']:
-            if r[3]=='T1' and owl_dict.has_key(r[4]):
+            if r[3]=='T1' and r[4] in owl_dict:
                 d['superClass']='&cogat;'+id_dictionary[r[4]]
-            elif r[3]=='T2' and owl_dict.has_key(r[4]):
+            elif r[3]=='T2' and r[4] in owl_dict:
                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[r[4]])
-            elif r[3]=='T16' and contrasts_dict.has_key(r[11]):
+            elif r[3]=='T16' and r[11] in contrasts_dict:
                  measured_by_relations.append(r)
 
     f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
@@ -323,7 +338,7 @@ for a in owl_dict.iterkeys():
             if m[11] in cnt_names:
                 good_measured_by_relations.append(m)
 #        print good_measured_by_relations
-        
+
         for m in good_measured_by_relations:
             f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[m[11]])
         f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;measured_by"/>\n\t\t\t\t<owl:allValuesFrom>\n\t\t\t\t\t<owl:Class>\n\t\t\t\t\t\t<owl:unionOf rdf:parseType="Collection">\n')
@@ -333,10 +348,10 @@ for a in owl_dict.iterkeys():
         f.write('\t\t\t\t\t\t</owl:unionOf>\n\t\t\t\t\t</owl:Class>\n\t\t\t\t</owl:allValuesFrom>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n\n')
 
     f.write('</owl:Class>\n\n\n')
-               
-                
+
+
 attrs_to_loop=['dc:Title','dc:Contributor','dc:Date','skos:definition','skos:prefLabel','skos:altLabel']
-for a in owl_task_dict.iterkeys():
+for a in owl_task_dict.keys():
     d=owl_task_dict[a]
     f.write('<owl:Class rdf:about="&cogat;%s">\n'%id_dictionary[a])
     f.write('\t<dc:identifier>%s</dc:identifier>\n'%a)
@@ -350,17 +365,17 @@ for a in owl_task_dict.iterkeys():
     if len(d['contrasts'])>0:
         for c in d['contrasts']:
                 f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;has_contrast"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[0]])
-   
+
     if len(d['relations'])>0:
         for r in d['relations']:
-            if r[3]=='T15' and owl_task_dict.has_key(r[4]):
-                 print r
+            if r[3]=='T15' and r[4] in owl_task_dict:
+                 print(r)
                  f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogat;descended_from"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[r[4]])
     f.write('\t<rdfs:subClassOf rdf:resource="%s"/>\n'%d['superClass'])
     f.write('</owl:Class>\n\n\n')
 
 # write out conditions as classes
-for a in owl_task_dict.iterkeys():
+for a in owl_task_dict.keys():
     if len(owl_task_dict[a]['conditions'])>0:
         for c in owl_task_dict[a]['conditions']:
             c = [x.replace('&#34;','') for x in c]
@@ -375,9 +390,9 @@ for a in owl_task_dict.iterkeys():
             f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&ro;part_of"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[2]])
             f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00300"/>\n')
             f.write('</owl:Class>\n\n\n')
-          
+
 # write out contrasts as classes
-for a in owl_task_dict.iterkeys():
+for a in owl_task_dict.keys():
     if len(owl_task_dict[a]['contrasts'])>0:
         for c in owl_task_dict[a]['contrasts']:
             c = [x.replace('&#34;','') for x in c]
@@ -390,7 +405,7 @@ for a in owl_task_dict.iterkeys():
             f.write('\t<rdfs:subClassOf>\n\t\t<owl:Restriction>\n\t\t\t<owl:onProperty rdf:resource="&cogpo;is_related_to"/>\n\t\t\t<owl:someValuesFrom rdf:resource="&cogat;%s"/>\n\t\t</owl:Restriction>\n\t</rdfs:subClassOf>\n'%id_dictionary[c[2]])
             f.write('\t<rdfs:subClassOf rdf:resource="&cogpo;COGPO_00109"/>\n')
             f.write('</owl:Class>\n\n\n')
-          
+
 
 
 # add basic classes
@@ -402,7 +417,7 @@ f.write('</rdf:RDF>\n')
 f.close()
 
 if not dict_ctr==existing_pickle_count:
-    print 'added new terms, saving dictionary...'
+    print('added new terms, saving dictionary...')
     pklfile=open(id_dictionary_file,'wb')
     pickle.dump(id_dictionary,pklfile)
     pklfile.close()
